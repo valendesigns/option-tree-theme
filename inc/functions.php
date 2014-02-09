@@ -175,10 +175,10 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
     
     // Filter the CSS
     $value = apply_filters( 'ot_demo_insert_css_with_markers_value', $value, $option_id );
-       	
+         
     /* insert CSS, even if the value is empty */
-   	$insertion = stripslashes( str_replace( $option, $value, $insertion ) );
-   	
+     $insertion = stripslashes( str_replace( $option, $value, $insertion ) );
+     
   }
   
   return $insertion;
