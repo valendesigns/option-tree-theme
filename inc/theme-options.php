@@ -129,7 +129,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_css',
         'label'       => __( 'CSS', 'option-tree-theme' ),
-        'desc'        => '<p>' . sprintf( __( 'The CSS option type is a textarea that when used properly can add dynamic CSS to your theme from within OptionTree. Unfortunately, due server limitations you will need to create a file named dynamic.css at the root level of your theme and change permissions using %s so the server can write to the file. I have had the most success setting this single file to %s but feel free to play around with permissions until everything is working. A good starting point is %s. When the server can save to the file, CSS will automatically be updated when you save your Theme Options.', 'option-tree-theme' ), 'chmod', '0777', '0666' ) . '</p><p>' . sprintf( __( 'This example assumes you have an option with the ID of %1$s. Which means this option will automatically insert the value of %1$s into the %2$s when the Theme Options are saved.', 'option-tree-theme' ), '<code>demo_background</code>', '<code>dynamic.css</code>' ) . '</p>',
+        'desc'        => '<p>' . sprintf( __( 'The CSS option type is a textarea that when used properly can add dynamic CSS to your theme from within OptionTree. Unfortunately, due server limitations you will need to create a file named %s at the root level of your theme and change permissions using %s so the server can write to the file. I have had the most success setting this single file to %s but feel free to play around with permissions until everything is working. A good starting point is %s. When the server can save to the file, CSS will automatically be updated when you save your Theme Options.', 'option-tree-theme' ), '<code>dynamic.css</code>', '<code>chmod</code>', '<code>0777</code>', '<code>0666</code>' ) . '</p><p>' . sprintf( __( 'This example assumes you have an option with the ID of %1$s. Which means this option will automatically insert the value of %1$s into the %2$s when the Theme Options are saved.', 'option-tree-theme' ), '<code>demo_background</code>', '<code>dynamic.css</code>' ) . '</p>',
         'std'         => '#custom {
   {{demo_background}}
 }',
@@ -252,7 +252,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_measurement',
         'label'       => __( 'Measurement', 'option-tree-theme' ),
-        'desc'        => sprintf( __( 'The Measurement option type is a mix of input and select fields. The text input excepts a value and the select lets you choose the unit of measurement to add to that value. Currently the default units are %s, %s, %s, and %s. However, you can change them with the %s filter.' ), '<code>px</code>', '<code>%</code>', '<code>em</code>', '<code>pt</code>', '<code>ot_measurement_unit_types</code>' ),
+        'desc'        => sprintf( __( 'The Measurement option type is a mix of input and select fields. The text input excepts a value and the select lets you choose the unit of measurement to add to that value. Currently the default units are %s, %s, %s, and %s. However, you can change them with the %s filter.', 'option-tree-theme' ), '<code>px</code>', '<code>%</code>', '<code>em</code>', '<code>pt</code>', '<code>ot_measurement_unit_types</code>' ),
         'std'         => '',
         'type'        => 'measurement',
         'section'     => 'option_types',
@@ -297,7 +297,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_page_checkbox',
         'label'       => __( 'Page Checkbox', 'option-tree-theme' ),
-        'desc'        => __( 'The Page Select option type displays a list of page IDs. It allows the user to check multiple page IDs for use in a custom function or loop.', 'option-tree-theme' ),
+        'desc'        => __( 'The Page Checkbox option type displays a list of page IDs. It allows the user to check multiple page IDs for use in a custom function or loop.', 'option-tree-theme' ),
         'std'         => '',
         'type'        => 'page-checkbox',
         'section'     => 'option_types',
@@ -327,7 +327,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_post_checkbox',
         'label'       => __( 'Post Checkbox', 'option-tree-theme' ),
-        'desc'        => __( 'The Post Select option type displays a list of post IDs. It allows the user to check multiple post IDs for use in a custom function or loop.', 'option-tree-theme' ),
+        'desc'        => __( 'The Post Checkbox option type displays a list of post IDs. It allows the user to check multiple post IDs for use in a custom function or loop.', 'option-tree-theme' ),
         'std'         => '',
         'type'        => 'post-checkbox',
         'section'     => 'option_types',

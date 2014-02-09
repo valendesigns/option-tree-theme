@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OptionTree Theme\n"
-"POT-Creation-Date: 2014-02-08 19:45-0800\n"
-"PO-Revision-Date: 2014-02-08 19:45-0800\n"
+"POT-Creation-Date: 2014-02-08 22:55-0800\n"
+"PO-Revision-Date: 2014-02-08 22:55-0800\n"
 "Last-Translator: Derek Herman <derek@valendesigns.com>\n"
 "Language-Team: Valen Designs\n"
 "Language: English\n"
@@ -484,11 +484,11 @@ msgstr ""
 msgid ""
 "The CSS option type is a textarea that when used properly can add dynamic "
 "CSS to your theme from within OptionTree. Unfortunately, due server "
-"limitations you will need to create a file named dynamic.css at the root "
-"level of your theme and change permissions using %s so the server can write "
-"to the file. I have had the most success setting this single file to %s but "
-"feel free to play around with permissions until everything is working. A "
-"good starting point is %s. When the server can save to the file, CSS will "
+"limitations you will need to create a file named %s at the root level of "
+"your theme and change permissions using %s so the server can write to the "
+"file. I have had the most success setting this single file to %s but feel "
+"free to play around with permissions until everything is working. A good "
+"starting point is %s. When the server can save to the file, CSS will "
 "automatically be updated when you save your Theme Options."
 msgstr ""
 
@@ -612,8 +612,8 @@ msgstr ""
 
 #: ../inc/theme-options.php:300
 msgid ""
-"The Page Select option type displays a list of page IDs. It allows the user "
-"to check multiple page IDs for use in a custom function or loop."
+"The Page Checkbox option type displays a list of page IDs. It allows the "
+"user to check multiple page IDs for use in a custom function or loop."
 msgstr ""
 
 #: ../inc/theme-options.php:314
@@ -632,8 +632,8 @@ msgstr ""
 
 #: ../inc/theme-options.php:330
 msgid ""
-"The Post Select option type displays a list of post IDs. It allows the user "
-"to check multiple post IDs for use in a custom function or loop."
+"The Post Checkbox option type displays a list of post IDs. It allows the "
+"user to check multiple post IDs for use in a custom function or loop."
 msgstr ""
 
 #: ../inc/theme-options.php:344
