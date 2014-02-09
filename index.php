@@ -22,7 +22,7 @@ get_header(); ?>
     
       <h2><?php _e( 'About', 'option-tree-theme' ); ?></h2>
       
-      <p><?php printf( __( 'The %s simply demonstrates how to integrate %s with any available theme; where no conflicts exist between them. In this demo, I\'ll show you how to setup OptionTree in your own theme, and for whichever installation mode you feel best suits your projects needs.', 'option-tree-theme' ), '<strong>' . __( 'OptionTree Theme', 'option-tree-theme' ) . '</strong>', '<strong>' . __( 'OptionTree', 'option-tree-theme' ) . '</strong>' ); ?></p>
+      <p><?php printf( __( 'The %s simply demonstrates how to integrate %s with any theme. In this demo, I\'ll show you how to setup OptionTree in your own theme, and for whichever installation mode you feel best suits your projects needs.', 'option-tree-theme' ), '<strong>' . __( 'OptionTree Theme', 'option-tree-theme' ) . '</strong>', '<strong>' . __( 'OptionTree', 'option-tree-theme' ) . '</strong>' ); ?></p>
       
       <p class="note note-danger"><?php printf( __( '%s This theme is not meant for production use, and is strictly for demonstration purposes only.', 'option-tree-theme' ), '<tt>' . __( 'WARNING', 'option-tree-theme' ) . ':</tt>' ); ?></p>
       
