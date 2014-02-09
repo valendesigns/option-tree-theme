@@ -399,8 +399,7 @@ function custom_theme_options() {
         'min_max_step'=> '',
         'class'       => '',
         'condition'   => '',
-        'operator'    => 'and',
-        'choices'     => ''
+        'operator'    => 'and'
       ),
       array(
         'id'          => 'demo_select',
