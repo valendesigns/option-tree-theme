@@ -1,0 +1,252 @@
+/**
+ * Theme Name:  OptionTree Theme
+ * Theme URI:   https://github.com/valendesigns/option-tree-theme
+ * Description: This theme simply demonstrates how to integrate the OptionTree Plugin with any available theme; where no conflicts exist between them.
+ * Version:     2.3.0
+ * Author:      Derek Herman
+ * Author URI:  http://valendesigns.com
+ * License:     GNU General Public License v3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+@font-face {
+	font-family: 'option-tree-font';
+	src:url('fonts/option-tree-font.eot?-230');
+	src:url('fonts/option-tree-font.eot?#iefix-230') format('embedded-opentype'),
+		url('fonts/option-tree-font.woff?-230') format('woff'),
+		url('fonts/option-tree-font.ttf?-230') format('truetype'),
+		url('fonts/option-tree-font.svg?-230#option-tree-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.option-tree-icon {
+  color: #999;
+	font-family: 'option-tree-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.option-tree-icon:before {
+  content: "\e785";
+  position: relative;
+  top: 2px;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+body, input, textarea {
+  color: #464646;
+  font: 15px 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+a {
+  color: #b94a48;
+  text-decoration: none;
+}
+
+a:focus, a:hover, a:active {
+  color: #000;
+  outline: 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px 0;
+}
+
+ul {
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+ul ul {
+  margin-bottom: 0;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ol li li {
+  list-style-type: lower-alpha;
+}
+
+ol li li li {
+  list-style-type: lower-roman;
+}
+
+dl {
+  margin-bottom: 30px;
+}
+
+dd {
+  margin-left: 30px;
+}
+
+strong,
+em {
+  font-weight: 600;
+}
+
+hr {
+  background-color: #d6d6d6;
+  border: 0;
+  color: #464646;
+  height: 1px;
+  margin: 30px 0;
+}
+
+code {
+  background: #f6f6f6;
+  color: #000;
+  font-size: 14px;
+  padding: 1px 3px 3px 3px;
+  border-radius: 2px;
+}
+
+h1 code, h2 code, h3 code,
+h1 tt, h2 tt, h3 tt {
+  font-size: 85%;
+  font-weight: normal;
+  letter-spacing: -0.05em;
+}
+
+pre {
+  background: #f6f6f6;
+  color: #000;
+  font-size: 14px;
+  margin: 15px 0;
+  padding: 10px 20px;
+  word-wrap: break-word;
+  box-shadow: inset 1px 0px 0px rgba( 0, 0, 0, 0.1 );
+}
+
+ul li pre {
+  margin-bottom: 0;
+}
+
+#page {
+  background: #fff;
+  max-width: 1200px;
+  width: 96%;
+  margin: 2% auto;
+  box-shadow: 0px 1px 2px rgba( 0, 0, 0, 0.2 );
+}
+
+header {
+  background: #222;
+  color: #a1aab6;
+  padding: 40px;
+}
+
+header h1 {
+  color: #eee;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+header code {
+  background: rgba( 255, 255, 255, 0.08 );
+  color: #d9c9c5;
+  padding: 2px 5px 5px 5px;
+}
+
+header code span {
+  color: #d7dce3;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+.entry-content {
+  padding: 30px 40px;
+}
+
+#colophon {
+  clear: both;
+  font-size: 90%;
+  max-width: 1200px;
+  margin: 0 auto 2% auto;
+  overflow: hidden;
+  width: 96%;
+}
+
+#colophon p {
+  float: right;
+}
+
+#colophon p.site-copy {
+  float: left;
+}
+
+.note {
+  background-color: #d6edf8;
+  color: #3a87ad;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 6px 10px;
+}
+
+p.note {
+  box-shadow: inset 1px 0px 0px rgba( 0, 0, 0, 0.1 );
+}
+
+span.note {
+  border-radius: 2px;
+  font-style: normal;
+  margin-bottom: 0;
+  padding: 0px 3px 3px 3px;
+}
+
+.note-danger {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+@-moz-document url-prefix() {
+  span.note {
+    padding: 0px 3px 2px 3px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+body > .note {
+  box-shadow: inset 0px -1px 0px rgba( 0, 0, 0, 0.1 );
+  margin-bottom: 0;
+  text-align: center;
+}
+
+body > .note a {
+  color: #fff;
+}
+
+body > .note.note-danger a {
+  color: #222;
+}
+
+body > .note a:hover {
+  text-decoration: underline;
+}
