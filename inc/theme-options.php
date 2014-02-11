@@ -219,6 +219,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'demo_gallery_shortcode',
+        'label'       => __( 'Gallery Shortcode', 'option-tree-theme' ),
+        'desc'        => sprintf( __( 'The Gallery option type can also be saved as a shortcode by adding %s to the class attribute. Using the Gallery option type in this manner will result in a better user experience as you\'re able to save the link, column, and order settings.', 'option-tree-theme' ), '<code>ot-gallery-shortcode</code>' ),
+        'std'         => '',
+        'type'        => 'gallery',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => 'ot-gallery-shortcode',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'demo_list_item',
         'label'       => __( 'List Item', 'option-tree-theme' ),
         'desc'        => __( 'The List Item option type allows for a great deal of customization. You can add settings to the List Item and those settings will be displayed to the user when they add a new List Item. Typical use is for creating sliding content or blocks of code for custom layouts.', 'option-tree-theme' ),
