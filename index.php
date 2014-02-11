@@ -255,6 +255,13 @@ load_template( trailingslashit( get_template_directory() ) . 'inc/theme-options.
       </dl>
       
       <dl>
+        <dt><tt>gallery</tt></dt>
+        <dd><code>ot_get_option( 'demo_gallery_shortcode' );</code> 
+        <?php demo_get_option( 'demo_gallery_shortcode' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>list-item</tt></dt>
         <dd><code>ot_get_option( 'demo_list_item' );</code> 
         <?php demo_get_option( 'demo_list_item' ); ?>
