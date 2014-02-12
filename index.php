@@ -14,7 +14,7 @@ get_header(); ?>
   
     <header class="entry-header">
     
-      <h1><i class="option-tree-icon"></i> <?php _e( 'OptionTree Theme', 'option-tree-theme' ); ?> <small>2.3.0</small></h1>
+      <h1><i class="option-tree-icon"></i> <?php _e( 'OptionTree Theme', 'option-tree-theme' ); ?> <small><?php echo OT_THEME_VERSION; ?></small></h1>
       
     </header><!-- .entry-header -->
 

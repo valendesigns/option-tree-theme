@@ -1,5 +1,10 @@
 <?php
 /**
+ * OptionTree Theme version
+ */
+define( 'OT_THEME_VERSION', '2.3.1' );
+
+/**
  * Register Theme Features
  */
 function option_tree_theme_setup()  {
@@ -52,7 +57,7 @@ add_filter( 'ot_layouts_id', 'filter_demo_layouts_id' );
  * Filters the Theme Option header list.
  */
 function filter_demo_header_list() {
-   echo '<li id="theme-version"><span>OptionTree Theme 2.3.0</span></li>';
+   echo '<li id="theme-version"><span>OptionTree Theme ' . OT_THEME_VERSION . '</span></li>';
 }
 add_action( 'ot_header_list', 'filter_demo_header_list' );
 
