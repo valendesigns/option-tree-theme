@@ -15,17 +15,6 @@ function option_tree_theme_setup()  {
    */
   load_theme_textdomain( 'option-tree-theme', get_template_directory() . '/languages' );
   
-  // Enable support for Post Thumbnails.
-  add_theme_support( 'post-thumbnails' );
-	
-  /**
-   * Enable support for Post Formats.
-   * See http://codex.wordpress.org/Post_Formats
-   */
-  add_theme_support( 'post-formats', array(
-    'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
-  ) );
-  
 }
 add_action( 'after_setup_theme', 'option_tree_theme_setup' );
 
@@ -115,11 +104,6 @@ add_filter( 'ot_meta_boxes', '__return_true' );
  * Allow Unfiltered HTML in textareas options
  */
 add_filter( 'ot_allow_unfiltered_html', '__return_false' );
-
-/**
- * Loads the meta boxes for post formats
- */
-add_filter( 'ot_post_formats', '__return_true' );
 
 /**
  * OptionTree in Theme Mode
