@@ -15,7 +15,7 @@ function custom_theme_options() {
   /**
    * Get a copy of the saved settings array. 
    */
-  $saved_settings = get_option( 'demo_option_tree_settings', array() );
+  $saved_settings = get_option( ot_settings_id(), array() );
   
   /**
    * Custom settings array that will eventually be 
@@ -637,11 +637,11 @@ function custom_theme_options() {
   );
   
   /* allow settings to be filtered before saving */
-  $custom_settings = apply_filters( 'demo_option_tree_settings_args', $custom_settings );
+  $custom_settings = apply_filters( ot_settings_id() . '_args', $custom_settings );
   
   /* settings are not the same update the DB */
   if ( $saved_settings !== $custom_settings ) {
-    update_option( 'demo_option_tree_settings', $custom_settings ); 
+    update_option( ot_settings_id(), $custom_settings ); 
   }
   
 }
