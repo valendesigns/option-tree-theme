@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.3.2
+* Fixed an issue with OptionTree not being loaded and throwing an error message.
+
 #### 2.3.1
 * Added an alternative Gallery option type, which demonstrates how to save its value as a shortcode.
 * Fixed an issue with custom settings ID causing confusion in `theme-options.php`.
