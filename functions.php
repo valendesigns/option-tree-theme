@@ -2,7 +2,7 @@
 /**
  * OptionTree Theme version
  */
-define( 'OT_THEME_VERSION', '2.3.1' );
+define( 'OT_THEME_VERSION', '2.3.2' );
 
 /**
  * Register Theme Features
