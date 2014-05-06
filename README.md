@@ -1,7 +1,8 @@
 ## Changelog
 
 #### 2.4.0
-* Added support for demonstrating the new Post Formats feature in OptionTree 2.4.0.
+* Added support for demonstrating the new Post Formats feature.
+* Demonstrate new Social Links option type.
 
 #### 2.3.2
 * Fixed an issue with OptionTree not being loaded and throwing an error message.

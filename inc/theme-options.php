@@ -473,6 +473,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'demo_social_links',
+        'label'       => __( 'Social Links', 'option-tree-theme' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'social-links',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'demo_tag_checkbox',
         'label'       => __( 'Tag Checkbox', 'option-tree-theme' ),
         'desc'        => __( 'The Tag Checkbox option type displays a list of tag IDs. It allows the user to check multiple tag IDs and will return that value as an array for use in a custom function or loop.', 'option-tree-theme' ),
