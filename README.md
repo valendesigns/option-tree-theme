@@ -1,7 +1,7 @@
 ## Changelog
 
 #### 2.4.0
-* Added support for demonstrating the new Post Formats feature.
+* Demonstrate the new Post Formats feature.
 * Demonstrate the new Social Links option type.
 
 #### 2.3.2
