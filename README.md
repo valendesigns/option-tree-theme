@@ -4,6 +4,7 @@
 * Demonstrate the new Post Formats feature.
 * Demonstrate the new Social Links option type.
 * Update translation strings in `option-tree-theme.po`.
+* Support new Installation & UI Builder administrative notices.
 
 #### 2.3.2
 * Fixed an issue with OptionTree not being loaded and throwing an error message.
