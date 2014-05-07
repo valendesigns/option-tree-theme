@@ -3,6 +3,7 @@
 #### 2.4.0
 * Demonstrate the new Post Formats feature.
 * Demonstrate the new Social Links option type.
+* Demonstrate how to save the attachment ID with the Upload option type.
 * Update translation strings in `option-tree-theme.po`.
 * Support new Installation & UI Builder administrative notices.
 
