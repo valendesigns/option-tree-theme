@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OptionTree Theme\n"
-"POT-Creation-Date: 2014-05-07 06:59-0800\n"
-"PO-Revision-Date: 2014-05-07 07:00-0800\n"
+"POT-Creation-Date: 2014-05-09 00:05-0800\n"
+"PO-Revision-Date: 2014-05-09 00:06-0800\n"
 "Last-Translator: Derek Herman <derek@valendesigns.com>\n"
 "Language-Team: Valen Designs\n"
 "Language: English\n"
@@ -724,6 +724,16 @@ msgstr ""
 
 #: ../inc/theme-options.php:477
 msgid "Social Links"
+msgstr ""
+
+#: ../inc/theme-options.php:478
+#, php-format
+msgid ""
+"The Social Links option type utilizes a drag & drop interface to create a "
+"list of social links. There are a few filters that make extending this "
+"option type easy. You can set the %s filter to %s and turn off loading "
+"default values. Use the %s filter to change the default values that are "
+"loaded. To filter the settings array use the %s filter."
 msgstr ""
 
 #: ../inc/theme-options.php:492
