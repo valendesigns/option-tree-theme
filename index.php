@@ -353,6 +353,13 @@ load_template( trailingslashit( get_template_directory() ) . 'inc/theme-options.
       </dl>
       
       <dl>
+        <dt><tt>social-links</tt></dt>
+        <dd><code>ot_get_option( 'demo_social_links' );</code> 
+        <?php demo_get_option( 'demo_social_links' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>tag-checkbox</tt></dt>
         <dd><code>ot_get_option( 'demo_tag_checkbox' );</code> 
         <?php demo_get_option( 'demo_tag_checkbox' ); ?>
