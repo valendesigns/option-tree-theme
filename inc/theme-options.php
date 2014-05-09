@@ -473,6 +473,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'demo_social_links',
+        'label'       => __( 'Social Links', 'option-tree-theme' ),
+        'desc'        => '<p>' . sprintf( __( 'The Social Links option type utilizes a drag & drop interface to create a list of social links. There are a few filters that make extending this option type easy. You can set the %s filter to %s and turn off loading default values. Use the %s filter to change the default values that are loaded. To filter the settings array use the %s filter.', 'option-tree-theme' ), '<code>ot_type_social_links_load_defaults</code>', '<code>false</code>', '<code>ot_type_social_links_defaults</code>', '<code>ot_social_links_settings</code>' ) . '</p>',
+        'std'         => '',
+        'type'        => 'social-links',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'demo_tag_checkbox',
         'label'       => __( 'Tag Checkbox', 'option-tree-theme' ),
         'desc'        => __( 'The Tag Checkbox option type displays a list of tag IDs. It allows the user to check multiple tag IDs and will return that value as an array for use in a custom function or loop.', 'option-tree-theme' ),
@@ -636,6 +651,21 @@ function custom_theme_options() {
         'class'       => '',
         'condition'   => '',
         'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'demo_upload_attachment_id',
+        'label'       => __( 'Upload Attachment ID', 'option-tree-theme' ),
+        'desc'        => sprintf( __( 'The Upload option type can also be saved as an attachment ID by adding %s to the class attribute.', 'option-tree-theme' ), '<code>ot-upload-attachment-id</code>' ),
+        'std'         => '',
+        'type'        => 'upload',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => 'ot-upload-attachment-id',
+        'condition'   => '',
+        'operator'    => 'and'
       )
     )
   );
@@ -647,5 +677,9 @@ function custom_theme_options() {
   if ( $saved_settings !== $custom_settings ) {
     update_option( ot_settings_id(), $custom_settings ); 
   }
+  
+  /* Lets OptionTree know the UI Builder is being overridden */
+  global $ot_has_custom_theme_options;
+  $ot_has_custom_theme_options = true;
   
 }
