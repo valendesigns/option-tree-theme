@@ -54,7 +54,7 @@ get_header(); ?>
 <pre>/**
  * Loads Theme Options
  */
-load_template( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
+require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
 </pre>                
                 </li>
               </ul>
@@ -88,7 +88,7 @@ add_filter( 'ot_theme_mode', '__return_true' );
 /**
  * Loads OptionTree
  */
-load_template( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
 </pre>
         </li>
         <li><?php _e( 'Create the Theme Options.', 'option-tree-theme' ); ?>
@@ -107,7 +107,7 @@ load_template( trailingslashit( get_template_directory() ) . 'option-tree/ot-loa
 <pre>/**
  * Loads Theme Options
  */
-load_template( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
+require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
 </pre>                
                 </li>
               </ul>
