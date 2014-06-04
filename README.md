@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.4.2
+* Replaced `load_template` with `require`.
+
 #### 2.4.0
 * Demonstrate the new Post Formats feature.
 * Demonstrate the new Social Links option type.
