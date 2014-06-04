@@ -124,24 +124,24 @@ add_filter( 'ot_post_formats', '__return_true' );
 /**
  * OptionTree in Theme Mode
  */
-# load_template( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+# require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
 
 /**
  * Theme Options
  */
-load_template( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
+require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
 
 /**
  * Meta Boxes
  */
-load_template( trailingslashit( get_template_directory() ) . 'inc/meta-boxes.php' );
+require( trailingslashit( get_template_directory() ) . 'inc/meta-boxes.php' );
 
 /**
  * Theme Customizer
  */
-load_template( trailingslashit( get_template_directory() ) . 'inc/customizer.php' );
+require( trailingslashit( get_template_directory() ) . 'inc/customizer.php' );
 
 /**
  * Demo Functions (for demonstration purposes only!)
  */
-load_template( trailingslashit( get_template_directory() ) . 'inc/functions.php' );
+require( trailingslashit( get_template_directory() ) . 'inc/functions.php' );
