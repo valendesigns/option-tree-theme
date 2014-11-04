@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.4.3
+* Fix missing text domain & update translation strings.
+
 #### 2.4.2
 * Replaced `load_template` with `require`.
 
