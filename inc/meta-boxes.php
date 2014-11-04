@@ -68,7 +68,7 @@ function custom_meta_boxes() {
         'label'       => __( 'Textarea', 'option-tree-theme' ),
         'id'          => 'demo_textarea',
         'type'        => 'textarea',
-        'desc'        => __( 'This is a demo Textarea field.' )
+        'desc'        => __( 'This is a demo Textarea field.', 'option-tree-theme' )
       )
     )
   );

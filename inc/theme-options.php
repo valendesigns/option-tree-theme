@@ -61,7 +61,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_category_checkbox',
         'label'       => __( 'Category Checkbox', 'option-tree-theme' ),
-        'desc'        => __( 'The Category Checkbox option type displays a list of category IDs. It allows the user to check multiple category IDs and will return that value as an array for use in a custom function or loop.' ),
+        'desc'        => __( 'The Category Checkbox option type displays a list of category IDs. It allows the user to check multiple category IDs and will return that value as an array for use in a custom function or loop.', 'option-tree-theme' ),
         'std'         => '',
         'type'        => 'category-checkbox',
         'section'     => 'option_types',
