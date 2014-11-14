@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.4.4
+* Version bump.
+
 #### 2.4.3
 * Fix missing text domain & update translation strings.
 
