@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OptionTree Theme\n"
-"POT-Creation-Date: 2014-11-04 01:56-0800\n"
-"PO-Revision-Date: 2014-11-04 01:56-0800\n"
+"POT-Creation-Date: 2014-11-13 19:29-0800\n"
+"PO-Revision-Date: 2014-11-13 19:29-0800\n"
 "Last-Translator: Derek Herman <derek@valendesigns.com>\n"
 "Language-Team: Valen Designs\n"
 "Language: English\n"
@@ -379,7 +379,7 @@ msgstr ""
 msgid "More Options"
 msgstr ""
 
-#: ../inc/meta-boxes.php:62 ../inc/theme-options.php:552
+#: ../inc/meta-boxes.php:62 ../inc/theme-options.php:567
 msgid "Text"
 msgstr ""
 
@@ -387,7 +387,7 @@ msgstr ""
 msgid "This is a demo Text field."
 msgstr ""
 
-#: ../inc/meta-boxes.php:68 ../inc/theme-options.php:567
+#: ../inc/meta-boxes.php:68 ../inc/theme-options.php:582
 msgid "Textarea"
 msgstr ""
 
@@ -418,7 +418,7 @@ msgid ""
 "filters allow you to fine tune the select lists for your specific needs."
 msgstr ""
 
-#: ../inc/theme-options.php:49 ../inc/theme-options.php:628
+#: ../inc/theme-options.php:49 ../inc/theme-options.php:643
 msgid "and"
 msgstr ""
 
@@ -737,56 +737,66 @@ msgid ""
 msgstr ""
 
 #: ../inc/theme-options.php:492
-msgid "Tag Checkbox"
+msgid "Spacing"
 msgstr ""
 
 #: ../inc/theme-options.php:493
+msgid ""
+"The Spacing option type is used to set spacing values such as padding or "
+"margin in the form of top, right, bottom, and left."
+msgstr ""
+
+#: ../inc/theme-options.php:507
+msgid "Tag Checkbox"
+msgstr ""
+
+#: ../inc/theme-options.php:508
 msgid ""
 "The Tag Checkbox option type displays a list of tag IDs. It allows the user "
 "to check multiple tag IDs and will return that value as an array for use in "
 "a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:507
+#: ../inc/theme-options.php:522
 msgid "Tag Select"
 msgstr ""
 
-#: ../inc/theme-options.php:508
+#: ../inc/theme-options.php:523
 msgid ""
 "The Tag Select option type displays a list of tag IDs. It allows the user to "
 "select only one tag ID and will return that value for use in a custom "
 "function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:522
+#: ../inc/theme-options.php:537
 msgid "Taxonomy Checkbox"
 msgstr ""
 
-#: ../inc/theme-options.php:523
+#: ../inc/theme-options.php:538
 msgid ""
 "The Taxonomy Checkbox option type displays a list of taxonomy IDs. It allows "
 "the user to check multiple taxonomy IDs and will return that value as an "
 "array for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:537
+#: ../inc/theme-options.php:552
 msgid "Taxonomy Select"
 msgstr ""
 
-#: ../inc/theme-options.php:538
+#: ../inc/theme-options.php:553
 msgid ""
 "The Taxonomy Select option type displays a list of taxonomy IDs. It allows "
 "the user to select only one taxonomy ID and will return that value for use "
 "in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:553
+#: ../inc/theme-options.php:568
 msgid ""
 "The Text option type is used to save string values. For example, any "
 "optional or required text that is of reasonably short character length."
 msgstr ""
 
-#: ../inc/theme-options.php:568
+#: ../inc/theme-options.php:583
 #, php-format
 msgid ""
 "The Textarea option type is a large string value used for custom code or "
@@ -794,21 +804,21 @@ msgid ""
 "the how it is displayed. For example, you can filter %s, %s, %s, and %s."
 msgstr ""
 
-#: ../inc/theme-options.php:582
+#: ../inc/theme-options.php:597
 msgid "Textarea Simple"
 msgstr ""
 
-#: ../inc/theme-options.php:583
+#: ../inc/theme-options.php:598
 msgid ""
 "The Textarea Simple option type is a large string value used for custom code "
 "or text in the theme. The Textarea Simple does not have a WYSIWYG editor."
 msgstr ""
 
-#: ../inc/theme-options.php:597
+#: ../inc/theme-options.php:612
 msgid "Textblock"
 msgstr ""
 
-#: ../inc/theme-options.php:598
+#: ../inc/theme-options.php:613
 msgid ""
 "The Textblock option type is used only on the Theme Option page. It will "
 "allow you to create & display HTML, but has no title above the text block. "
@@ -817,11 +827,11 @@ msgid ""
 "themes template files as it does not save a value."
 msgstr ""
 
-#: ../inc/theme-options.php:612
+#: ../inc/theme-options.php:627
 msgid "Textblock Titled"
 msgstr ""
 
-#: ../inc/theme-options.php:613
+#: ../inc/theme-options.php:628
 msgid ""
 "The Textblock Titled option type is used only on the Theme Option page. It "
 "will allow you to create & display HTML, and has a title above the text "
@@ -830,11 +840,11 @@ msgid ""
 "this in your themes template files as it does not save a value."
 msgstr ""
 
-#: ../inc/theme-options.php:627
+#: ../inc/theme-options.php:642
 msgid "Typography"
 msgstr ""
 
-#: ../inc/theme-options.php:628
+#: ../inc/theme-options.php:643
 #, php-format
 msgid ""
 "The Typography option type is for adding typography styles to your theme "
@@ -845,11 +855,11 @@ msgid ""
 "filters allow you to fine tune the select lists for your specific needs."
 msgstr ""
 
-#: ../inc/theme-options.php:642
+#: ../inc/theme-options.php:657
 msgid "Upload"
 msgstr ""
 
-#: ../inc/theme-options.php:643
+#: ../inc/theme-options.php:658
 #, php-format
 msgid ""
 "The Upload option type is used to upload any WordPress supported media. "
@@ -860,15 +870,15 @@ msgid ""
 "upload or %s any media to your new server and change the URIs if necessary."
 msgstr ""
 
-#: ../inc/theme-options.php:643
+#: ../inc/theme-options.php:658
 msgid "Send to OptionTree"
 msgstr ""
 
-#: ../inc/theme-options.php:657
+#: ../inc/theme-options.php:672
 msgid "Upload Attachment ID"
 msgstr ""
 
-#: ../inc/theme-options.php:658
+#: ../inc/theme-options.php:673
 #, php-format
 msgid ""
 "The Upload option type can also be saved as an attachment ID by adding %s to "

@@ -360,6 +360,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>spacing</tt></dt>
+        <dd><code>ot_get_option( 'demo_spacing' );</code> 
+        <?php demo_get_option( 'demo_spacing' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>tag-checkbox</tt></dt>
         <dd><code>ot_get_option( 'demo_tag_checkbox' );</code> 
         <?php demo_get_option( 'demo_tag_checkbox' ); ?>

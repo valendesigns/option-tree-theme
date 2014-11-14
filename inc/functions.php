@@ -88,7 +88,28 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
           
           /* set $value with measurement properties */
           $value = $value[0].$value[1];
+        
+        /* Spacing */
+        } else if ( demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'unit' ) ) ) {
+          $spacing = array();
           
+          $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
+          
+          if ( ! empty( $value['top'] ) )
+            $spacing[] = $value['top'].$unit;
+            
+          if ( ! empty( $value['right'] ) )
+            $spacing[] = $value['right'].$unit;
+            
+          if ( ! empty( $value['bottom'] ) )
+            $spacing[] = $value['bottom'].$unit;
+            
+          if ( ! empty( $value['left'] ) )
+            $spacing[] = $value['left'].$unit;
+            
+          /* set $value with spacing properties or empty string */
+          $value = ! empty( $spacing ) ? implode( ' ', $spacing ) : '';
+              
         /* typography */
         } else if ( demo_array_keys_exists( $value, array( 'font-color', 'font-family', 'font-size', 'font-style', 'font-variant', 'font-weight', 'letter-spacing', 'line-height', 'text-decoration', 'text-transform' ) ) ) {
           $font = array();

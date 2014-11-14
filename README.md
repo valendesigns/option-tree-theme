@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.5.0
+* Added the Spacing option type.
+
 #### 2.4.4
 * Version bump.
 
