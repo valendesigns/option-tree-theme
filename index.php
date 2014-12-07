@@ -248,6 +248,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>dimension</tt></dt>
+        <dd><code>ot_get_option( 'demo_dimension' );</code> 
+        <?php demo_get_option( 'demo_dimension' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>gallery</tt></dt>
         <dd><code>ot_get_option( 'demo_gallery' );</code> 
         <?php demo_get_option( 'demo_gallery' ); ?>

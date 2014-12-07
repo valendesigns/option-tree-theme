@@ -208,6 +208,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'demo_dimension',
+        'label'       => __( 'Dimension', 'option-tree-theme' ),
+        'desc'        => __( 'The Dimension option type is used to set width and height values.', 'option-tree-theme' ),
+        'std'         => '',
+        'type'        => 'dimension',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'demo_gallery',
         'label'       => __( 'Gallery', 'option-tree-theme' ),
         'desc'        => __( 'The Gallery option type saves a comma separated list of image attachment IDs. You will need to create a front-end function to display the images in your theme.', 'option-tree-theme' ),

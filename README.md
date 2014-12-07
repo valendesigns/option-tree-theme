@@ -1,6 +1,7 @@
 ## Changelog
 
 #### 2.5.0
+* Added the Dimension option type.
 * Added the Spacing option type.
 
 #### 2.4.4

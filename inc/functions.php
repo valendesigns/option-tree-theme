@@ -89,6 +89,21 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
           /* set $value with measurement properties */
           $value = $value[0].$value[1];
         
+        /* Dimension */
+        } else if ( demo_array_keys_exists( $value, array( 'width', 'height', 'unit' ) ) ) {
+          $dimension = array();
+          
+          $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
+          
+          if ( ! empty( $value['width'] ) )
+            $dimension[] = $value['width'].$unit;
+            
+          if ( ! empty( $value['height'] ) )
+            $dimension[] = $value['height'].$unit;
+            
+          /* set $value with dimension properties or empty string */
+          $value = ! empty( $dimension ) ? implode( ' ', $dimension ) : '';
+              
         /* Spacing */
         } else if ( demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'unit' ) ) ) {
           $spacing = array();
