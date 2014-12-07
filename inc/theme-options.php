@@ -59,6 +59,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'demo_border',
+        'label'       => __( 'Border', 'option-tree-theme' ),
+        'desc'        => __( 'The Border option type is used to set width, unit, style, and color values.', 'option-tree-theme' ),
+        'std'         => '',
+        'type'        => 'border',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'demo_category_checkbox',
         'label'       => __( 'Category Checkbox', 'option-tree-theme' ),
         'desc'        => __( 'The Category Checkbox option type displays a list of category IDs. It allows the user to check multiple category IDs and will return that value as an array for use in a custom function or loop.', 'option-tree-theme' ),

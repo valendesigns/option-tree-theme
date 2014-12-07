@@ -1,6 +1,7 @@
 ## Changelog
 
 #### 2.5.0
+* Added the Border option type.
 * Added the Dimension option type.
 * Added the Spacing option type.
 

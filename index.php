@@ -185,6 +185,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>border</tt></dt>
+        <dd><code>ot_get_option( 'demo_border' );</code> 
+        <?php demo_get_option( 'demo_border' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>category-checkbox</tt></dt>
         <dd><code>ot_get_option( 'demo_category_checkbox' );</code> 
         <?php demo_get_option( 'demo_category_checkbox' ); ?>

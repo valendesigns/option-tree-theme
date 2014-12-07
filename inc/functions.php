@@ -89,8 +89,26 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
           /* set $value with measurement properties */
           $value = $value[0].$value[1];
         
+        /* Border */
+        } else if ( demo_array_keys_exists( $value, array( 'width', 'unit', 'style', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'height' ) ) ) {
+          $border = array();
+          
+          $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
+          
+          if ( ! empty( $value['width'] ) )
+            $border[] = $value['width'].$unit;
+            
+          if ( ! empty( $value['style'] ) )
+            $border[] = $value['style'];
+            
+          if ( ! empty( $value['color'] ) )
+            $border[] = $value['color'];
+            
+          /* set $value with dimension properties or empty string */
+          $value = ! empty( $border ) ? implode( ' ', $border ) : '';
+
         /* Dimension */
-        } else if ( demo_array_keys_exists( $value, array( 'width', 'height', 'unit' ) ) ) {
+        } else if ( demo_array_keys_exists( $value, array( 'width', 'height', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'style', 'color', 'top', 'right', 'bottom', 'left' ) ) ) {
           $dimension = array();
           
           $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
@@ -105,7 +123,7 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
           $value = ! empty( $dimension ) ? implode( ' ', $dimension ) : '';
               
         /* Spacing */
-        } else if ( demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'unit' ) ) ) {
+        } else if ( demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'width', 'height', 'style', 'color' ) ) ) {
           $spacing = array();
           
           $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
