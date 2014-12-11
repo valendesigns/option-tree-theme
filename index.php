@@ -192,6 +192,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>box-shadow</tt></dt>
+        <dd><code>ot_get_option( 'demo_box_shadow' );</code> 
+        <?php demo_get_option( 'demo_box_shadow' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>category-checkbox</tt></dt>
         <dd><code>ot_get_option( 'demo_category_checkbox' );</code> 
         <?php demo_get_option( 'demo_category_checkbox' ); ?>

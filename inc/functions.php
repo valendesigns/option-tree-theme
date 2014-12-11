@@ -90,7 +90,7 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
           $value = $value[0].$value[1];
         
         /* Border */
-        } else if ( demo_array_keys_exists( $value, array( 'width', 'unit', 'style', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'height' ) ) ) {
+        } else if ( demo_array_keys_exists( $value, array( 'width', 'unit', 'style', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'height', 'inset', 'offset-x', 'offset-y', 'blur-radius', 'spread-radius' ) ) ) {
           $border = array();
           
           $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
@@ -106,7 +106,13 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
             
           /* set $value with dimension properties or empty string */
           $value = ! empty( $border ) ? implode( ' ', $border ) : '';
+        
+        /* Box Shadow */
+        } else if ( demo_array_keys_exists( $value, array( 'inset', 'offset-x', 'offset-y', 'blur-radius', 'spread-radius', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'width', 'height', 'unit', 'style', 'top', 'right', 'bottom', 'left' ) ) ) {
 
+          /* set $value with box-shadow properties or empty string */
+          $value = ! empty( $value ) ? implode( ' ', $value ) : '';
+              
         /* Dimension */
         } else if ( demo_array_keys_exists( $value, array( 'width', 'height', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'style', 'color', 'top', 'right', 'bottom', 'left' ) ) ) {
           $dimension = array();
