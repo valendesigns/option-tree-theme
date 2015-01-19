@@ -161,6 +161,21 @@ function custom_theme_options() {
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'demo_colorpicker_opacity',
+        'label'       => __( 'Colorpicker Opacity', 'option-tree-theme' ),
+        'desc'        => sprintf( __( 'The Colorpicker Opacity option type saves a hexadecimal color code with an opacity value from %s to %s in increments of %s. Though the value is saved as hexadecimal, if used within the CSS option type the color and opacity values will be converted into a valid RGBA CSS value.', 'option-tree-theme' ), '<code>0</code>', '<code>1</code>', '<code>0.01</code>' ),
+        'std'         => '',
+        'type'        => 'colorpicker-opacity',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'demo_css',
         'label'       => __( 'CSS', 'option-tree-theme' ),
         'desc'        => '<p>' . sprintf( __( 'The CSS option type is a textarea that when used properly can add dynamic CSS to your theme from within OptionTree. Unfortunately, due server limitations you will need to create a file named %s at the root level of your theme and change permissions using %s so the server can write to the file. I have had the most success setting this single file to %s but feel free to play around with permissions until everything is working. A good starting point is %s. When the server can save to the file, CSS will automatically be updated when you save your Theme Options.', 'option-tree-theme' ), '<code>dynamic.css</code>', '<code>chmod</code>', '<code>0777</code>', '<code>0666</code>' ) . '</p><p>' . sprintf( __( 'This example assumes you have an option with the ID of %1$s. Which means this option will automatically insert the value of %1$s into the %2$s when the Theme Options are saved.', 'option-tree-theme' ), '<code>demo_background</code>', '<code>dynamic.css</code>' ) . '</p>',
@@ -279,6 +294,21 @@ function custom_theme_options() {
         'taxonomy'    => '',
         'min_max_step'=> '',
         'class'       => 'ot-gallery-shortcode',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'demo_link_color',
+        'label'       => __( 'Link Color', 'option-tree-theme' ),
+        'desc'        => __( 'The Link Color option type is used to set all link color states.', 'option-tree-theme' ),
+        'std'         => '',
+        'type'        => 'link-color',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
         'condition'   => '',
         'operator'    => 'and'
       ),

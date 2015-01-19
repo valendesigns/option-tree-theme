@@ -3,7 +3,9 @@
 #### 2.5.0
 * Added the Border option type.
 * Added the Box Shadow option type.
+* Added the Colorpicker Opacity option type.
 * Added the Dimension option type.
+* Added the Link Color option type.
 * Added the Spacing option type.
 
 #### 2.4.4
