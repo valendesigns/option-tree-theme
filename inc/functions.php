@@ -88,7 +88,67 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
           
           /* set $value with measurement properties */
           $value = $value[0].$value[1];
+        
+        /* Border */
+        } else if ( demo_array_keys_exists( $value, array( 'width', 'unit', 'style', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'height', 'inset', 'offset-x', 'offset-y', 'blur-radius', 'spread-radius' ) ) ) {
+          $border = array();
           
+          $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
+          
+          if ( ! empty( $value['width'] ) )
+            $border[] = $value['width'].$unit;
+            
+          if ( ! empty( $value['style'] ) )
+            $border[] = $value['style'];
+            
+          if ( ! empty( $value['color'] ) )
+            $border[] = $value['color'];
+            
+          /* set $value with dimension properties or empty string */
+          $value = ! empty( $border ) ? implode( ' ', $border ) : '';
+        
+        /* Box Shadow */
+        } else if ( demo_array_keys_exists( $value, array( 'inset', 'offset-x', 'offset-y', 'blur-radius', 'spread-radius', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'width', 'height', 'unit', 'style', 'top', 'right', 'bottom', 'left' ) ) ) {
+
+          /* set $value with box-shadow properties or empty string */
+          $value = ! empty( $value ) ? implode( ' ', $value ) : '';
+              
+        /* Dimension */
+        } else if ( demo_array_keys_exists( $value, array( 'width', 'height', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'style', 'color', 'top', 'right', 'bottom', 'left' ) ) ) {
+          $dimension = array();
+          
+          $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
+          
+          if ( ! empty( $value['width'] ) )
+            $dimension[] = $value['width'].$unit;
+            
+          if ( ! empty( $value['height'] ) )
+            $dimension[] = $value['height'].$unit;
+            
+          /* set $value with dimension properties or empty string */
+          $value = ! empty( $dimension ) ? implode( ' ', $dimension ) : '';
+              
+        /* Spacing */
+        } else if ( demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'width', 'height', 'style', 'color' ) ) ) {
+          $spacing = array();
+          
+          $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
+          
+          if ( ! empty( $value['top'] ) )
+            $spacing[] = $value['top'].$unit;
+            
+          if ( ! empty( $value['right'] ) )
+            $spacing[] = $value['right'].$unit;
+            
+          if ( ! empty( $value['bottom'] ) )
+            $spacing[] = $value['bottom'].$unit;
+            
+          if ( ! empty( $value['left'] ) )
+            $spacing[] = $value['left'].$unit;
+            
+          /* set $value with spacing properties or empty string */
+          $value = ! empty( $spacing ) ? implode( ' ', $spacing ) : '';
+              
         /* typography */
         } else if ( demo_array_keys_exists( $value, array( 'font-color', 'font-family', 'font-size', 'font-style', 'font-variant', 'font-weight', 'letter-spacing', 'line-height', 'text-decoration', 'text-transform' ) ) ) {
           $font = array();
