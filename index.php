@@ -227,6 +227,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>colorpicker-opacity</tt></dt>
+        <dd><code>ot_get_option( 'demo_colorpicker_opacity' );</code> 
+        <?php demo_get_option( 'demo_colorpicker_opacity' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>css</tt></dt>
         <dd><code>ot_get_option( 'demo_css' );</code>
         <?php demo_get_option( 'demo_css', true ); ?>
@@ -279,6 +286,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
         <dt><tt>gallery</tt></dt>
         <dd><code>ot_get_option( 'demo_gallery_shortcode' );</code> 
         <?php demo_get_option( 'demo_gallery_shortcode' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><tt>link-color</tt></dt>
+        <dd><code>ot_get_option( 'demo_link_color' );</code> 
+        <?php demo_get_option( 'demo_link_color' ); ?>
         </dd>
       </dl>
       
