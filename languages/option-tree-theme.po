@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OptionTree Theme\n"
-"POT-Creation-Date: 2015-02-03 00:25-0800\n"
-"PO-Revision-Date: 2015-02-03 00:25-0800\n"
+"POT-Creation-Date: 2015-02-03 00:44-0800\n"
+"PO-Revision-Date: 2015-02-03 00:44-0800\n"
 "Last-Translator: Derek Herman <derek@valendesigns.com>\n"
 "Language-Team: Valen Designs\n"
 "Language: English\n"
@@ -31,25 +31,25 @@ msgstr ""
 msgid "OptionTree Theme"
 msgstr ""
 
-#: ../header.php:26
+#: ../header.php:24
 #, php-format
 msgid ""
 "%s needs to be installed! Choose an installation mode, and follow the steps "
 "below to get everything setup."
 msgstr ""
 
-#: ../header.php:26 ../index.php:25 ../index.php:40 ../index.php:80
+#: ../header.php:24 ../index.php:25 ../index.php:40 ../index.php:80
 msgid "OptionTree"
 msgstr ""
 
-#: ../header.php:30
+#: ../header.php:28
 #, php-format
 msgid ""
 "Please upgrade! This theme requires OptionTree %s or newer and you have %s "
 "installed."
 msgstr ""
 
-#: ../header.php:34
+#: ../header.php:32
 #, php-format
 msgid "Congratulations! You've successfully installed OptionTree %s."
 msgstr ""
@@ -341,7 +341,7 @@ msgid ""
 "first hand how each option type is saved in the database."
 msgstr ""
 
-#: ../inc/functions.php:20
+#: ../inc/functions.php:32
 msgid "no value"
 msgstr ""
 
