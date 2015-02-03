@@ -8,6 +8,7 @@
 * Added the Dimension option type.
 * Added the Link Color option type.
 * Added the Spacing option type.
+* Enqueue main stylesheet.
 
 #### 2.4.4
 * Version bump.
