@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OptionTree Theme\n"
-"POT-Creation-Date: 2015-02-07 22:40-0800\n"
-"PO-Revision-Date: 2015-02-07 22:40-0800\n"
+"POT-Creation-Date: 2015-02-08 05:43-0800\n"
+"PO-Revision-Date: 2015-02-08 05:43-0800\n"
 "Last-Translator: Derek Herman <derek@valendesigns.com>\n"
 "Language-Team: Valen Designs\n"
 "Language: en\n"
@@ -93,7 +93,7 @@ msgstr ""
 msgid "More Options"
 msgstr ""
 
-#: ../inc/meta-boxes.php:62 ../inc/theme-options.php:663
+#: ../inc/meta-boxes.php:62 ../inc/theme-options.php:678
 msgid "Text"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "This is a demo Text field."
 msgstr ""
 
-#: ../inc/meta-boxes.php:68 ../inc/theme-options.php:678
+#: ../inc/meta-boxes.php:68 ../inc/theme-options.php:693
 msgid "Textarea"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgid ""
 "filters allow you to fine tune the select lists for your specific needs."
 msgstr ""
 
-#: ../inc/theme-options.php:49 ../inc/theme-options.php:739
+#: ../inc/theme-options.php:49 ../inc/theme-options.php:754
 msgid "and"
 msgstr ""
 
@@ -192,13 +192,13 @@ msgid ""
 "custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:138 ../inc/theme-options.php:494
-#: ../inc/theme-options.php:546
+#: ../inc/theme-options.php:138 ../inc/theme-options.php:509
+#: ../inc/theme-options.php:561
 msgid "No"
 msgstr ""
 
-#: ../inc/theme-options.php:143 ../inc/theme-options.php:489
-#: ../inc/theme-options.php:541
+#: ../inc/theme-options.php:143 ../inc/theme-options.php:504
+#: ../inc/theme-options.php:556
 msgid "Yes"
 msgstr ""
 
@@ -345,18 +345,29 @@ msgid ""
 msgstr ""
 
 #: ../inc/theme-options.php:323
-msgid "Link Color"
+msgid "JavaScript"
 msgstr ""
 
 #: ../inc/theme-options.php:324
-msgid "The Link Color option type is used to set all link color states."
+#, php-format
+msgid ""
+"The JavaScript option type is a textarea that uses the %s code editor to "
+"highlight your JavaScript and display errors as you type."
 msgstr ""
 
 #: ../inc/theme-options.php:338
-msgid "List Item"
+msgid "Link Color"
 msgstr ""
 
 #: ../inc/theme-options.php:339
+msgid "The Link Color option type is used to set all link color states."
+msgstr ""
+
+#: ../inc/theme-options.php:353
+msgid "List Item"
+msgstr ""
+
+#: ../inc/theme-options.php:354
 msgid ""
 "The List Item option type allows for a great deal of customization. You can "
 "add settings to the List Item and those settings will be displayed to the "
@@ -364,15 +375,15 @@ msgid ""
 "content or blocks of code for custom layouts."
 msgstr ""
 
-#: ../inc/theme-options.php:353
+#: ../inc/theme-options.php:368
 msgid "Content"
 msgstr ""
 
-#: ../inc/theme-options.php:369
+#: ../inc/theme-options.php:384
 msgid "Measurement"
 msgstr ""
 
-#: ../inc/theme-options.php:370
+#: ../inc/theme-options.php:385
 #, php-format
 msgid ""
 "The Measurement option type is a mix of input and select fields. The text "
@@ -381,87 +392,87 @@ msgid ""
 "However, you can change them with the %s filter."
 msgstr ""
 
-#: ../inc/theme-options.php:384
+#: ../inc/theme-options.php:399
 msgid "Numeric Slider"
 msgstr ""
 
-#: ../inc/theme-options.php:385
+#: ../inc/theme-options.php:400
 msgid ""
 "The Numeric Slider option type displays a jQuery UI slider. It will return a "
 "single numerical value for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:399
+#: ../inc/theme-options.php:414
 msgid "On/Off"
 msgstr ""
 
-#: ../inc/theme-options.php:400
+#: ../inc/theme-options.php:415
 #, php-format
 msgid ""
 "The On/Off option type displays a simple switch that can be used to turn "
 "things on or off. The saved return value is either %s or %s."
 msgstr ""
 
-#: ../inc/theme-options.php:414
+#: ../inc/theme-options.php:429
 msgid "Page Checkbox"
 msgstr ""
 
-#: ../inc/theme-options.php:415
+#: ../inc/theme-options.php:430
 msgid ""
 "The Page Checkbox option type displays a list of page IDs. It allows the "
 "user to check multiple page IDs for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:429
+#: ../inc/theme-options.php:444
 msgid "Page Select"
 msgstr ""
 
-#: ../inc/theme-options.php:430
+#: ../inc/theme-options.php:445
 msgid ""
 "The Page Select option type displays a list of page IDs. It will return a "
 "single page ID for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:444
+#: ../inc/theme-options.php:459
 msgid "Post Checkbox"
 msgstr ""
 
-#: ../inc/theme-options.php:445
+#: ../inc/theme-options.php:460
 msgid ""
 "The Post Checkbox option type displays a list of post IDs. It allows the "
 "user to check multiple post IDs for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:459
+#: ../inc/theme-options.php:474
 msgid "Post Select"
 msgstr ""
 
-#: ../inc/theme-options.php:460
+#: ../inc/theme-options.php:475
 msgid ""
 "The Post Select option type displays a list of post IDs. It will return a "
 "single post ID for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:474
+#: ../inc/theme-options.php:489
 msgid "Radio"
 msgstr ""
 
-#: ../inc/theme-options.php:475
+#: ../inc/theme-options.php:490
 msgid ""
 "The Radio option type displays a group of choices. It allows the user to "
 "choose one and will return that value as a string for use in a custom "
 "function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:499 ../inc/theme-options.php:551
+#: ../inc/theme-options.php:514 ../inc/theme-options.php:566
 msgid "Maybe"
 msgstr ""
 
-#: ../inc/theme-options.php:506
+#: ../inc/theme-options.php:521
 msgid "Radio Image"
 msgstr ""
 
-#: ../inc/theme-options.php:507
+#: ../inc/theme-options.php:522
 #, php-format
 msgid ""
 "the Radio Images option type is primarily used for layouts. However, you can "
@@ -469,25 +480,25 @@ msgid ""
 "using the choices array."
 msgstr ""
 
-#: ../inc/theme-options.php:521
+#: ../inc/theme-options.php:536
 msgid "Select"
 msgstr ""
 
-#: ../inc/theme-options.php:522
+#: ../inc/theme-options.php:537
 msgid ""
 "The Select option type is used to list anything you want that would be "
 "chosen from a select list."
 msgstr ""
 
-#: ../inc/theme-options.php:536
+#: ../inc/theme-options.php:551
 msgid "-- Choose One --"
 msgstr ""
 
-#: ../inc/theme-options.php:558
+#: ../inc/theme-options.php:573
 msgid "Sidebar Select"
 msgstr ""
 
-#: ../inc/theme-options.php:559
+#: ../inc/theme-options.php:574
 #, php-format
 msgid ""
 "This option type makes it possible for users to select a WordPress "
@@ -496,7 +507,7 @@ msgid ""
 "on a specific content area."
 msgstr ""
 
-#: ../inc/theme-options.php:559
+#: ../inc/theme-options.php:574
 #, php-format
 msgid ""
 "For example, if we create a WordPress theme that provides the ability to "
@@ -505,11 +516,11 @@ msgid ""
 "using a regular expression if we have a common name like %s."
 msgstr ""
 
-#: ../inc/theme-options.php:573
+#: ../inc/theme-options.php:588
 msgid "Social Links"
 msgstr ""
 
-#: ../inc/theme-options.php:574
+#: ../inc/theme-options.php:589
 #, php-format
 msgid ""
 "The Social Links option type utilizes a drag & drop interface to create a "
@@ -519,67 +530,67 @@ msgid ""
 "loaded. To filter the settings array use the %s filter."
 msgstr ""
 
-#: ../inc/theme-options.php:588
+#: ../inc/theme-options.php:603
 msgid "Spacing"
 msgstr ""
 
-#: ../inc/theme-options.php:589
+#: ../inc/theme-options.php:604
 msgid ""
 "The Spacing option type is used to set spacing values such as padding or "
 "margin in the form of top, right, bottom, and left."
 msgstr ""
 
-#: ../inc/theme-options.php:603
+#: ../inc/theme-options.php:618
 msgid "Tag Checkbox"
 msgstr ""
 
-#: ../inc/theme-options.php:604
+#: ../inc/theme-options.php:619
 msgid ""
 "The Tag Checkbox option type displays a list of tag IDs. It allows the user "
 "to check multiple tag IDs and will return that value as an array for use in "
 "a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:618
+#: ../inc/theme-options.php:633
 msgid "Tag Select"
 msgstr ""
 
-#: ../inc/theme-options.php:619
+#: ../inc/theme-options.php:634
 msgid ""
 "The Tag Select option type displays a list of tag IDs. It allows the user to "
 "select only one tag ID and will return that value for use in a custom "
 "function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:633
+#: ../inc/theme-options.php:648
 msgid "Taxonomy Checkbox"
 msgstr ""
 
-#: ../inc/theme-options.php:634
+#: ../inc/theme-options.php:649
 msgid ""
 "The Taxonomy Checkbox option type displays a list of taxonomy IDs. It allows "
 "the user to check multiple taxonomy IDs and will return that value as an "
 "array for use in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:648
+#: ../inc/theme-options.php:663
 msgid "Taxonomy Select"
 msgstr ""
 
-#: ../inc/theme-options.php:649
+#: ../inc/theme-options.php:664
 msgid ""
 "The Taxonomy Select option type displays a list of taxonomy IDs. It allows "
 "the user to select only one taxonomy ID and will return that value for use "
 "in a custom function or loop."
 msgstr ""
 
-#: ../inc/theme-options.php:664
+#: ../inc/theme-options.php:679
 msgid ""
 "The Text option type is used to save string values. For example, any "
 "optional or required text that is of reasonably short character length."
 msgstr ""
 
-#: ../inc/theme-options.php:679
+#: ../inc/theme-options.php:694
 #, php-format
 msgid ""
 "The Textarea option type is a large string value used for custom code or "
@@ -587,21 +598,21 @@ msgid ""
 "the how it is displayed. For example, you can filter %s, %s, %s, and %s."
 msgstr ""
 
-#: ../inc/theme-options.php:693
+#: ../inc/theme-options.php:708
 msgid "Textarea Simple"
 msgstr ""
 
-#: ../inc/theme-options.php:694
+#: ../inc/theme-options.php:709
 msgid ""
 "The Textarea Simple option type is a large string value used for custom code "
 "or text in the theme. The Textarea Simple does not have a WYSIWYG editor."
 msgstr ""
 
-#: ../inc/theme-options.php:708
+#: ../inc/theme-options.php:723
 msgid "Textblock"
 msgstr ""
 
-#: ../inc/theme-options.php:709
+#: ../inc/theme-options.php:724
 msgid ""
 "The Textblock option type is used only on the Theme Option page. It will "
 "allow you to create & display HTML, but has no title above the text block. "
@@ -610,11 +621,11 @@ msgid ""
 "themes template files as it does not save a value."
 msgstr ""
 
-#: ../inc/theme-options.php:723
+#: ../inc/theme-options.php:738
 msgid "Textblock Titled"
 msgstr ""
 
-#: ../inc/theme-options.php:724
+#: ../inc/theme-options.php:739
 msgid ""
 "The Textblock Titled option type is used only on the Theme Option page. It "
 "will allow you to create & display HTML, and has a title above the text "
@@ -623,11 +634,11 @@ msgid ""
 "this in your themes template files as it does not save a value."
 msgstr ""
 
-#: ../inc/theme-options.php:738
+#: ../inc/theme-options.php:753
 msgid "Typography"
 msgstr ""
 
-#: ../inc/theme-options.php:739
+#: ../inc/theme-options.php:754
 #, php-format
 msgid ""
 "The Typography option type is for adding typography styles to your theme "
@@ -638,11 +649,11 @@ msgid ""
 "filters allow you to fine tune the select lists for your specific needs."
 msgstr ""
 
-#: ../inc/theme-options.php:753
+#: ../inc/theme-options.php:768
 msgid "Upload"
 msgstr ""
 
-#: ../inc/theme-options.php:754
+#: ../inc/theme-options.php:769
 #, php-format
 msgid ""
 "The Upload option type is used to upload any WordPress supported media. "
@@ -653,15 +664,15 @@ msgid ""
 "upload or %s any media to your new server and change the URIs if necessary."
 msgstr ""
 
-#: ../inc/theme-options.php:754
+#: ../inc/theme-options.php:769
 msgid "Send to OptionTree"
 msgstr ""
 
-#: ../inc/theme-options.php:768
+#: ../inc/theme-options.php:783
 msgid "Upload Attachment ID"
 msgstr ""
 
-#: ../inc/theme-options.php:769
+#: ../inc/theme-options.php:784
 #, php-format
 msgid ""
 "The Upload option type can also be saved as an attachment ID by adding %s to "
