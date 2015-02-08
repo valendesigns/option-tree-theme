@@ -288,7 +288,14 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
         <?php demo_get_option( 'demo_gallery_shortcode' ); ?>
         </dd>
       </dl>
-      
+
+      <dl>
+        <dt><tt>google-fonts</tt></dt>
+        <dd><code>ot_get_option( 'demo_google_fonts' );</code> 
+        <?php demo_get_option( 'demo_google_fonts' ); ?>
+        </dd>
+      </dl>
+
       <dl>
         <dt><tt>link-color</tt></dt>
         <dd><code>ot_get_option( 'demo_link_color' );</code> 

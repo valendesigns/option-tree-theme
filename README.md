@@ -1,12 +1,14 @@
 ## Changelog
 
 #### 2.5.0
+* Added the Google Fonts option type.
 * Added the Border option type.
 * Added the Box Shadow option type.
 * Added the Colorpicker Opacity option type.
 * Added the Dimension option type.
 * Added the Link Color option type.
 * Added the Spacing option type.
+* Enqueue main stylesheet.
 * Fixed an issue where changes to `theme-options.php` required a second page load.
 
 #### 2.4.4
