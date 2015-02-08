@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OptionTree Theme\n"
-"POT-Creation-Date: 2015-02-03 00:44-0800\n"
-"PO-Revision-Date: 2015-02-03 00:44-0800\n"
+"POT-Creation-Date: 2015-02-07 22:36-0800\n"
+"PO-Revision-Date: 2015-02-07 22:36-0800\n"
 "Last-Translator: Derek Herman <derek@valendesigns.com>\n"
 "Language-Team: Valen Designs\n"
-"Language: English\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
 "esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
@@ -52,293 +52,6 @@ msgstr ""
 #: ../header.php:32
 #, php-format
 msgid "Congratulations! You've successfully installed OptionTree %s."
-msgstr ""
-
-#: ../index.php:23
-msgid "About"
-msgstr ""
-
-#: ../index.php:25
-#, php-format
-msgid ""
-"The %s simply demonstrates how to integrate %s with any theme. In this demo, "
-"I'll show you how to setup OptionTree in your own theme, and for whichever "
-"installation mode you feel best suits your projects needs."
-msgstr ""
-
-#: ../index.php:27
-#, php-format
-msgid ""
-"%s This theme is not meant for production use, and is strictly for "
-"demonstration purposes only."
-msgstr ""
-
-#: ../index.php:27
-msgid "WARNING"
-msgstr ""
-
-#: ../index.php:31
-msgid "Installation"
-msgstr ""
-
-#: ../index.php:33
-#, php-format
-msgid ""
-"There are two possible installation modes when using OptionTree. The first "
-"option is %s, which is going to be the traditional way WordPress would like "
-"you to use plugins. Which means, OptionTree is installed and activated "
-"through the Plugins page and upgraded via the WordPress Plugins Directory. "
-"The second option is %s, this is where you include OptionTree somewhere "
-"within the directory of your theme and take advantage of the flexibility and "
-"control you'll have over your themes upgrade path."
-msgstr ""
-
-#: ../index.php:33 ../index.php:37
-msgid "Plugin Mode"
-msgstr ""
-
-#: ../index.php:33 ../index.php:67
-msgid "Theme Mode"
-msgstr ""
-
-#: ../index.php:35
-msgid ""
-"Below, I'll walk you through setting up OptionTree for each installation "
-"mode."
-msgstr ""
-
-#: ../index.php:40
-#, php-format
-msgid ""
-"Install %s and activate the plugin. For help with this refer to the %s page "
-"in the WordPress Codex."
-msgstr ""
-
-#: ../index.php:40
-msgid "Manage Plugins"
-msgstr ""
-
-#: ../index.php:41 ../index.php:94
-msgid "Create the Theme Options."
-msgstr ""
-
-#: ../index.php:43 ../index.php:96
-#, php-format
-msgid "Theme Options UI Builder %s."
-msgstr ""
-
-#: ../index.php:43 ../index.php:96
-msgid "not recommended for premium themes"
-msgstr ""
-
-#: ../index.php:45 ../index.php:98
-#, php-format
-msgid ""
-"Simply create your Theme Options with the Theme Options UI Builder %s an "
-"easy to use drag & drop interface."
-msgstr ""
-
-#: ../index.php:48 ../index.php:101
-msgid "Hand Built."
-msgstr ""
-
-#: ../index.php:50 ../index.php:103
-#, php-format
-msgid "Create an %s directory in your theme."
-msgstr ""
-
-#: ../index.php:51
-#, php-format
-msgid "Create a %s file in the new %s directory."
-msgstr ""
-
-#: ../index.php:52 ../index.php:105
-#, php-format
-msgid ""
-"Copy and paste the contents of %s found in this themes %s directory into "
-"your new %s."
-msgstr ""
-
-#: ../index.php:53 ../index.php:106
-#, php-format
-msgid "Load the %s file by adding the following code to your %s."
-msgstr ""
-
-#: ../index.php:64 ../index.php:117
-#, php-format
-msgid "Integrate your custom Theme Options into your theme with %s."
-msgstr ""
-
-#: ../index.php:69
-#, php-format
-msgid ""
-"The two installation modes share some of the same steps, but Theme Mode has "
-"%s key differences."
-msgstr ""
-
-#: ../index.php:72
-msgid "OptionTree is included in the directory of your theme."
-msgstr ""
-
-#: ../index.php:73
-#, php-format
-msgid "You must filter %s so it returns true."
-msgstr ""
-
-#: ../index.php:74
-msgid "You must deactivate and/or delete the plugin version of OptionTree."
-msgstr ""
-
-#: ../index.php:77
-msgid "I'll walk you through the step below."
-msgstr ""
-
-#: ../index.php:80
-#, php-format
-msgid "Download the latest version of %s and unarchive the %s directory."
-msgstr ""
-
-#: ../index.php:81
-#, php-format
-msgid ""
-"Put the %s directory in the root of your theme. For example, the server path "
-"would be %s."
-msgstr ""
-
-#: ../index.php:82
-#, php-format
-msgid ""
-"Add the following code to the very beginning of your %s so it is executed "
-"before anything else."
-msgstr ""
-
-#: ../index.php:104
-#, php-format
-msgid "Create a %s file in the new <tt>inc</tt> directory."
-msgstr ""
-
-#: ../index.php:120
-#, php-format
-msgid ""
-"%1$s Refer to the %2$s file found in the root directory of this theme for "
-"more information on the UI filters that can be set in your own %2$s."
-msgstr ""
-
-#: ../index.php:120 ../index.php:122
-msgid "NOTE:"
-msgstr ""
-
-#: ../index.php:122
-#, php-format
-msgid ""
-"%s If you're using the %s, know that some servers will stop saving your "
-"options after about a %s or so have been added with the UI Builder. This is "
-"why coding your own array is recommended for premium themes as they "
-"typically have a lot of options."
-msgstr ""
-
-#: ../index.php:122
-msgid "Theme Option UI Builder"
-msgstr ""
-
-#: ../index.php:122
-msgid "Link to comment in issue"
-msgstr ""
-
-#: ../index.php:126
-msgid "Integration"
-msgstr ""
-
-#: ../index.php:128
-#, php-format
-msgid ""
-"It's important to mention that the %s function is not available to your "
-"theme or plugin until the %s action has fired at priority %s. Which means "
-"you cannot use %s in your %s unless it's used inside a function being called "
-"at priority %s or later; however, you can use it inside your themes template "
-"files without issue, because they're being loaded after the action has been "
-"fired."
-msgstr ""
-
-#: ../index.php:130
-#, php-format
-msgid "Function Reference: %s"
-msgstr ""
-
-#: ../index.php:132
-#, php-format
-msgid ""
-"A safe way of getting values for a named option from the saved Theme Options "
-"array. If no value has been saved, it returns $default or %s."
-msgstr ""
-
-#: ../index.php:134
-msgid "Usage"
-msgstr ""
-
-#: ../index.php:138
-msgid "Parameters"
-msgstr ""
-
-#: ../index.php:142
-#, php-format
-msgid "(%s) (required) Name of the option to retrieve."
-msgstr ""
-
-#: ../index.php:142
-msgid "string"
-msgstr ""
-
-#: ../index.php:144 ../index.php:153
-#, php-format
-msgid "Default: %s"
-msgstr ""
-
-#: ../index.php:151
-#, php-format
-msgid ""
-"(%s) (optional) The default value to return if no value is returned (ie. the "
-"option is not in the database)."
-msgstr ""
-
-#: ../index.php:151 ../index.php:161
-msgid "mixed"
-msgstr ""
-
-#: ../index.php:158
-msgid "Return Values"
-msgstr ""
-
-#: ../index.php:162
-#, php-format
-msgid ""
-"Current value for the specified option. If the specified option does not "
-"exist, returns boolean %s."
-msgstr ""
-
-#: ../index.php:168 ../inc/theme-options.php:33 ../inc/theme-options.php:42
-msgid "Option Types"
-msgstr ""
-
-#: ../index.php:170
-msgid ""
-"This is a complete list of all the available option types that come shipped "
-"with OptionTree."
-msgstr ""
-
-#: ../index.php:173
-#, php-format
-msgid ""
-"However, without %s installed you're going to have a hard time changing the "
-"option type values below. Go back up to Installation Modes and get started "
-"installing OptionTree."
-msgstr ""
-
-#: ../index.php:175
-#, php-format
-msgid ""
-"Visit the %s page to update the returned values displayed below, and see "
-"first hand how each option type is saved in the database."
 msgstr ""
 
 #: ../inc/functions.php:32
@@ -393,6 +106,10 @@ msgstr ""
 
 #: ../inc/meta-boxes.php:71
 msgid "This is a demo Textarea field."
+msgstr ""
+
+#: ../inc/theme-options.php:33 ../inc/theme-options.php:42 ../index.php:168
+msgid "Option Types"
 msgstr ""
 
 #: ../inc/theme-options.php:34
@@ -948,4 +665,287 @@ msgstr ""
 msgid ""
 "The Upload option type can also be saved as an attachment ID by adding %s to "
 "the class attribute."
+msgstr ""
+
+#: ../index.php:23
+msgid "About"
+msgstr ""
+
+#: ../index.php:25
+#, php-format
+msgid ""
+"The %s simply demonstrates how to integrate %s with any theme. In this demo, "
+"I'll show you how to setup OptionTree in your own theme, and for whichever "
+"installation mode you feel best suits your projects needs."
+msgstr ""
+
+#: ../index.php:27
+#, php-format
+msgid ""
+"%s This theme is not meant for production use, and is strictly for "
+"demonstration purposes only."
+msgstr ""
+
+#: ../index.php:27
+msgid "WARNING"
+msgstr ""
+
+#: ../index.php:31
+msgid "Installation"
+msgstr ""
+
+#: ../index.php:33
+#, php-format
+msgid ""
+"There are two possible installation modes when using OptionTree. The first "
+"option is %s, which is going to be the traditional way WordPress would like "
+"you to use plugins. Which means, OptionTree is installed and activated "
+"through the Plugins page and upgraded via the WordPress Plugins Directory. "
+"The second option is %s, this is where you include OptionTree somewhere "
+"within the directory of your theme and take advantage of the flexibility and "
+"control you'll have over your themes upgrade path."
+msgstr ""
+
+#: ../index.php:33 ../index.php:37
+msgid "Plugin Mode"
+msgstr ""
+
+#: ../index.php:33 ../index.php:67
+msgid "Theme Mode"
+msgstr ""
+
+#: ../index.php:35
+msgid ""
+"Below, I'll walk you through setting up OptionTree for each installation "
+"mode."
+msgstr ""
+
+#: ../index.php:40
+#, php-format
+msgid ""
+"Install %s and activate the plugin. For help with this refer to the %s page "
+"in the WordPress Codex."
+msgstr ""
+
+#: ../index.php:40
+msgid "Manage Plugins"
+msgstr ""
+
+#: ../index.php:41 ../index.php:94
+msgid "Create the Theme Options."
+msgstr ""
+
+#: ../index.php:43 ../index.php:96
+#, php-format
+msgid "Theme Options UI Builder %s."
+msgstr ""
+
+#: ../index.php:43 ../index.php:96
+msgid "not recommended for premium themes"
+msgstr ""
+
+#: ../index.php:45 ../index.php:98
+#, php-format
+msgid ""
+"Simply create your Theme Options with the Theme Options UI Builder %s an "
+"easy to use drag & drop interface."
+msgstr ""
+
+#: ../index.php:48 ../index.php:101
+msgid "Hand Built."
+msgstr ""
+
+#: ../index.php:50 ../index.php:103
+#, php-format
+msgid "Create an %s directory in your theme."
+msgstr ""
+
+#: ../index.php:51
+#, php-format
+msgid "Create a %s file in the new %s directory."
+msgstr ""
+
+#: ../index.php:52 ../index.php:105
+#, php-format
+msgid ""
+"Copy and paste the contents of %s found in this themes %s directory into "
+"your new %s."
+msgstr ""
+
+#: ../index.php:53 ../index.php:106
+#, php-format
+msgid "Load the %s file by adding the following code to your %s."
+msgstr ""
+
+#: ../index.php:64 ../index.php:117
+#, php-format
+msgid "Integrate your custom Theme Options into your theme with %s."
+msgstr ""
+
+#: ../index.php:69
+#, php-format
+msgid ""
+"The two installation modes share some of the same steps, but Theme Mode has "
+"%s key differences."
+msgstr ""
+
+#: ../index.php:72
+msgid "OptionTree is included in the directory of your theme."
+msgstr ""
+
+#: ../index.php:73
+#, php-format
+msgid "You must filter %s so it returns true."
+msgstr ""
+
+#: ../index.php:74
+msgid "You must deactivate and/or delete the plugin version of OptionTree."
+msgstr ""
+
+#: ../index.php:77
+msgid "I'll walk you through the step below."
+msgstr ""
+
+#: ../index.php:80
+#, php-format
+msgid "Download the latest version of %s and unarchive the %s directory."
+msgstr ""
+
+#: ../index.php:81
+#, php-format
+msgid ""
+"Put the %s directory in the root of your theme. For example, the server path "
+"would be %s."
+msgstr ""
+
+#: ../index.php:82
+#, php-format
+msgid ""
+"Add the following code to the very beginning of your %s so it is executed "
+"before anything else."
+msgstr ""
+
+#: ../index.php:104
+#, php-format
+msgid "Create a %s file in the new <tt>inc</tt> directory."
+msgstr ""
+
+#: ../index.php:120
+#, php-format
+msgid ""
+"%1$s Refer to the %2$s file found in the root directory of this theme for "
+"more information on the UI filters that can be set in your own %2$s."
+msgstr ""
+
+#: ../index.php:120 ../index.php:122
+msgid "NOTE:"
+msgstr ""
+
+#: ../index.php:122
+#, php-format
+msgid ""
+"%s If you're using the %s, know that some servers will stop saving your "
+"options after about a %s or so have been added with the UI Builder. This is "
+"why coding your own array is recommended for premium themes as they "
+"typically have a lot of options."
+msgstr ""
+
+#: ../index.php:122
+msgid "Theme Option UI Builder"
+msgstr ""
+
+#: ../index.php:122
+msgid "Link to comment in issue"
+msgstr ""
+
+#: ../index.php:126
+msgid "Integration"
+msgstr ""
+
+#: ../index.php:128
+#, php-format
+msgid ""
+"It's important to mention that the %s function is not available to your "
+"theme or plugin until the %s action has fired at priority %s. Which means "
+"you cannot use %s in your %s unless it's used inside a function being called "
+"at priority %s or later; however, you can use it inside your themes template "
+"files without issue, because they're being loaded after the action has been "
+"fired."
+msgstr ""
+
+#: ../index.php:130
+#, php-format
+msgid "Function Reference: %s"
+msgstr ""
+
+#: ../index.php:132
+#, php-format
+msgid ""
+"A safe way of getting values for a named option from the saved Theme Options "
+"array. If no value has been saved, it returns $default or %s."
+msgstr ""
+
+#: ../index.php:134
+msgid "Usage"
+msgstr ""
+
+#: ../index.php:138
+msgid "Parameters"
+msgstr ""
+
+#: ../index.php:142
+#, php-format
+msgid "(%s) (required) Name of the option to retrieve."
+msgstr ""
+
+#: ../index.php:142
+msgid "string"
+msgstr ""
+
+#: ../index.php:144 ../index.php:153
+#, php-format
+msgid "Default: %s"
+msgstr ""
+
+#: ../index.php:151
+#, php-format
+msgid ""
+"(%s) (optional) The default value to return if no value is returned (ie. the "
+"option is not in the database)."
+msgstr ""
+
+#: ../index.php:151 ../index.php:161
+msgid "mixed"
+msgstr ""
+
+#: ../index.php:158
+msgid "Return Values"
+msgstr ""
+
+#: ../index.php:162
+#, php-format
+msgid ""
+"Current value for the specified option. If the specified option does not "
+"exist, returns boolean %s."
+msgstr ""
+
+#: ../index.php:170
+msgid ""
+"This is a complete list of all the available option types that come shipped "
+"with OptionTree."
+msgstr ""
+
+#: ../index.php:173
+#, php-format
+msgid ""
+"However, without %s installed you're going to have a hard time changing the "
+"option type values below. Go back up to Installation Modes and get started "
+"installing OptionTree."
+msgstr ""
+
+#: ../index.php:175
+#, php-format
+msgid ""
+"Visit the %s page to update the returned values displayed below, and see "
+"first hand how each option type is saved in the database."
 msgstr ""
