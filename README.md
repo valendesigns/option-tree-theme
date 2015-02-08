@@ -6,6 +6,7 @@
 * Added the Box Shadow option type.
 * Added the Colorpicker Opacity option type.
 * Added the Dimension option type.
+* Added the JavaScript option type.
 * Added the Link Color option type.
 * Added the Spacing option type.
 * Enqueue main stylesheet.
