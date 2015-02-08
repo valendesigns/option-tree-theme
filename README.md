@@ -7,6 +7,7 @@
 * Added the Dimension option type.
 * Added the Link Color option type.
 * Added the Spacing option type.
+* Fixed an issue where changes to `theme-options.php` required a second page load.
 
 #### 2.4.4
 * Version bump.

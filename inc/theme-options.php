@@ -2,7 +2,7 @@
 /**
  * Initialize the custom Theme Options.
  */
-add_action( 'admin_init', 'custom_theme_options' );
+add_action( 'init', 'custom_theme_options' );
 
 /**
  * Build the custom settings & update OptionTree.
@@ -11,11 +11,11 @@ add_action( 'admin_init', 'custom_theme_options' );
  * @since     2.3.0
  */
 function custom_theme_options() {
-  
-  /* OptionTree is not loaded yet */
-  if ( ! function_exists( 'ot_settings_id' ) )
+
+  /* OptionTree is not loaded yet, or this is not an admin request */
+  if ( ! function_exists( 'ot_settings_id' ) || ! is_admin() )
     return false;
-  
+
   /**
    * Get a copy of the saved settings array. 
    */
@@ -294,6 +294,27 @@ function custom_theme_options() {
         'taxonomy'    => '',
         'min_max_step'=> '',
         'class'       => 'ot-gallery-shortcode',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'demo_google_fonts',
+        'label'       => __( 'Google Fonts', 'option-tree-theme' ),
+        'desc'        => sprintf( __( 'The Google Fonts option type will dynamically enqueue any number of Google Web Fonts into the document %1$s. As well, once the option has been saved each font family will automatically be inserted into the %2$s array for the Typography option type. You can further modify the font stack by using the %3$s filter, which is passed the %4$s, %5$s, and %6$s parameters. The %6$s parameter is being passed from %7$s, so it will be the ID of a Typography option type. This will allow you to add additional web safe fonts to individual font families on an as-need basis.', 'option-tree-theme' ), '<code>HEAD</code>', '<code>font-family</code>', '<code>ot_google_font_stack</code>', '<code>$font_stack</code>', '<code>$family</code>', '<code>$field_id</code>', '<code>ot_recognized_font_families</code>' ),
+        'std'         => array( 
+          array(
+            'family'    => 'opensans',
+            'variants'  => array( '300', '300italic', 'regular', 'italic', '600', '600italic' ),
+            'subsets'   => array( 'latin' )
+          )
+        ),
+        'type'        => 'google-fonts',
+        'section'     => 'option_types',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
         'condition'   => '',
         'operator'    => 'and'
       ),
