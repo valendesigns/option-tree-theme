@@ -295,6 +295,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
         <?php demo_get_option( 'demo_google_fonts' ); ?>
         </dd>
       </dl>
+      
+      <dl>
+        <dt><tt>javascript</tt></dt>
+        <dd><code>ot_get_option( 'demo_javascript' );</code> 
+        <?php demo_get_option( 'demo_javascript' ); ?>
+        </dd>
+      </dl>
 
       <dl>
         <dt><tt>link-color</tt></dt>
