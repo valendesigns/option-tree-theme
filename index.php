@@ -185,6 +185,20 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>border</tt></dt>
+        <dd><code>ot_get_option( 'demo_border' );</code> 
+        <?php demo_get_option( 'demo_border' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><tt>box-shadow</tt></dt>
+        <dd><code>ot_get_option( 'demo_box_shadow' );</code> 
+        <?php demo_get_option( 'demo_box_shadow' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>category-checkbox</tt></dt>
         <dd><code>ot_get_option( 'demo_category_checkbox' );</code> 
         <?php demo_get_option( 'demo_category_checkbox' ); ?>
@@ -209,6 +223,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
         <dt><tt>colorpicker</tt></dt>
         <dd><code>ot_get_option( 'demo_colorpicker' );</code> 
         <?php demo_get_option( 'demo_colorpicker' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><tt>colorpicker-opacity</tt></dt>
+        <dd><code>ot_get_option( 'demo_colorpicker_opacity' );</code> 
+        <?php demo_get_option( 'demo_colorpicker_opacity' ); ?>
         </dd>
       </dl>
       
@@ -248,6 +269,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
       </dl>
       
       <dl>
+        <dt><tt>dimension</tt></dt>
+        <dd><code>ot_get_option( 'demo_dimension' );</code> 
+        <?php demo_get_option( 'demo_dimension' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
         <dt><tt>gallery</tt></dt>
         <dd><code>ot_get_option( 'demo_gallery' );</code> 
         <?php demo_get_option( 'demo_gallery' ); ?>
@@ -258,6 +286,27 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
         <dt><tt>gallery</tt></dt>
         <dd><code>ot_get_option( 'demo_gallery_shortcode' );</code> 
         <?php demo_get_option( 'demo_gallery_shortcode' ); ?>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><tt>google-fonts</tt></dt>
+        <dd><code>ot_get_option( 'demo_google_fonts' );</code> 
+        <?php demo_get_option( 'demo_google_fonts' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><tt>javascript</tt></dt>
+        <dd><code>ot_get_option( 'demo_javascript' );</code> 
+        <?php demo_get_option( 'demo_javascript' ); ?>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><tt>link-color</tt></dt>
+        <dd><code>ot_get_option( 'demo_link_color' );</code> 
+        <?php demo_get_option( 'demo_link_color' ); ?>
         </dd>
       </dl>
       
@@ -356,6 +405,13 @@ require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' )
         <dt><tt>social-links</tt></dt>
         <dd><code>ot_get_option( 'demo_social_links' );</code> 
         <?php demo_get_option( 'demo_social_links' ); ?>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt><tt>spacing</tt></dt>
+        <dd><code>ot_get_option( 'demo_spacing' );</code> 
+        <?php demo_get_option( 'demo_spacing' ); ?>
         </dd>
       </dl>
       

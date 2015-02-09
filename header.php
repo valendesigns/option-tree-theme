@@ -13,8 +13,6 @@
     
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title><?php _e( 'OptionTree Theme', 'option-tree-theme' ); ?> <?php echo OT_THEME_VERSION; ?></title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600&subset=latin,latin-ext&ver=<?php echo OT_THEME_VERSION; ?>" type="text/css" media="all" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <?php wp_head(); ?>
     
   </head>
