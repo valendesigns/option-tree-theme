@@ -163,7 +163,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_colorpicker_opacity',
         'label'       => __( 'Colorpicker Opacity', 'option-tree-theme' ),
-        'desc'        => sprintf( __( 'The Colorpicker Opacity option type saves an rgba color value for use in CSS. To add opacity to other colorpickers add the %s class to the %s array.', 'option-tree-theme' ), '<code>ot-colorpicker-opacity</code>', '<code>$args</code>' )
+        'desc'        => sprintf( __( 'The Colorpicker Opacity option type saves an rgba color value for use in CSS. To add opacity to other colorpickers add the %s class to the %s array.', 'option-tree-theme' ), '<code>ot-colorpicker-opacity</code>', '<code>$args</code>' ),
         'std'         => '',
         'type'        => 'colorpicker-opacity',
         'section'     => 'option_types',
