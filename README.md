@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.5.1
+* Update the Colorpicker Opacity option type description.
+
 #### 2.5.0
 * Added the Google Fonts option type.
 * Added the Border option type.
