@@ -244,7 +244,16 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
       }
      
     }
-    
+
+    // Fallback when value is empty
+    if ( empty( $value ) && isset( $option_array[1] ) ) {
+
+      // Link Color `inherit` fallback
+      if ( in_array( $option_array[1], array( 'link', 'hover', 'active', 'visited', 'focus' ) ) ) {
+        $value = 'inherit';
+      }
+    }
+
     // Filter the CSS
     $value = apply_filters( 'ot_demo_insert_css_with_markers_value', $value, $option_id );
          
