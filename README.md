@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 2.5.2
+* Add `inherit` fallback to the `link-color` option type in dynamic.css.
+* Update the CSS option types default value.
+
 #### 2.5.1
 * Update the Colorpicker Opacity option type description.
 
