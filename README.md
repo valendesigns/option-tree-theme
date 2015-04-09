@@ -1,7 +1,15 @@
 ## Changelog
 
+#### 2.5.3
+* Added `inherit` fallback to the `border` option type in dynamic.css.
+* Added `none` fallback to the `box-shadow` option type in dynamic.css.
+* Added `inherit` fallback to the `colorpicker` option type in dynamic.css.
+* Added `inherit` fallback to the `colorpicker-opacity` option type in dynamic.css.
+* Refactored `demo_parse_css` to remove confusing & unnecessary PHP statements and fix whitespace.
+* Update the CSS option types default value.
+
 #### 2.5.2
-* Add `inherit` fallback to the `link-color` option type in dynamic.css.
+* Added `inherit` fallback to the `link-color` option type in dynamic.css.
 * Update the CSS option types default value.
 
 #### 2.5.1
