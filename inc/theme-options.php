@@ -183,6 +183,22 @@ function custom_theme_options() {
 body {
   {{demo_background}}
 }
+/* Border */
+.border {
+  border: {{demo_border}};
+}
+/* Box Shadow */
+.box-shadow {
+  box-shadow: {{demo_box_shadow}};
+}
+/* Colorpicker */
+.colorpicker {
+  background-color: {{demo_colorpicker}};
+}
+/* Colorpicker Opacity */
+.colorpicker-opacity {
+  background-color: {{demo_colorpicker_opacity}};
+}
 /* Link Color */
 body a:link {
   color: {{demo_link_color|link}};

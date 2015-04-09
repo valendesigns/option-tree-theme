@@ -55,119 +55,125 @@ function demo_get_option( $option, $css = false ) {
  * @since     2.3.0
  */
 function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
-  
+
   /* missing $field_id or $insertion exit early */
   if ( '' == $field_id || '' == $insertion )
     return;
-  
+
   $insertion   = demo_normalize_css( $insertion );
   $regex       = "/{{([a-zA-Z0-9\_\-\#\|\=]+)}}/";
-  
+
   /* Match custom CSS */
   preg_match_all( $regex, $insertion, $matches );
-  
+
   /* Loop through CSS */
   foreach( $matches[0] as $option ) {
 
     $value        = '';
-    $option_id    = str_replace( array( '{{', '}}' ), '', $option );
-    $option_array = explode( '|', $option_id );
+    $option_array = explode( '|', str_replace( array( '{{', '}}' ), '', $option ) );
+    $option_id    = isset( $option_array[0] ) ? $option_array[0] : '';
+    $option_key   = isset( $option_array[1] ) ? $option_array[1] : '';
+    $option_type  = demo_get_option_type_by_id( $option_id );
+    $fallback     = '';
 
-    /* get the array value */
+    // Get the meta array value
     if ( $meta ) {
       global $post;
-      
-      $value = get_post_meta( $post->ID, $option_array[0], true );
-      
+
+      $value = get_post_meta( $post->ID, $option_id, true );
+
+    // Get the options array value
     } else {
-    
-      $options = get_option( 'demo_option_tree' );
-      
-      if ( isset( $options[$option_array[0]] ) ) {
-        
-        $value = $options[$option_array[0]];
+
+      $options = get_option( ot_options_id() );
+
+      if ( isset( $options[$option_id] ) ) {
+
+        $value = $options[$option_id];
 
       }
-      
+
     }
-    
+
+    // This in an array of values
     if ( is_array( $value ) ) {
-      
-      if ( ! isset( $option_array[1] ) ) {
-      
-        /* Measurement */
-        if ( isset( $value[0] ) && isset( $value[1] ) ) {
-          
-          /* set $value with measurement properties */
-          $value = $value[0].$value[1];
-        
-        /* Border */
-        } else if ( demo_array_keys_exists( $value, array( 'width', 'unit', 'style', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'height', 'inset', 'offset-x', 'offset-y', 'blur-radius', 'spread-radius' ) ) ) {
+
+      if ( empty( $option_key ) ) {
+
+        // Measurement
+        if ( $option_type == 'measurement' ) {
+
+          // Set $value with measurement properties
+          if ( isset( $value[0] ) && isset( $value[1] ) )
+            $value = $value[0].$value[1];
+
+        // Border
+        } else if ( $option_type == 'border' ) {
           $border = array();
-          
+
           $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
-          
+
           if ( ! empty( $value['width'] ) )
             $border[] = $value['width'].$unit;
-            
+
           if ( ! empty( $value['style'] ) )
             $border[] = $value['style'];
-            
+
           if ( ! empty( $value['color'] ) )
             $border[] = $value['color'];
-            
-          /* set $value with dimension properties or empty string */
+
+          /* set $value with border properties or empty string */
           $value = ! empty( $border ) ? implode( ' ', $border ) : '';
-        
-        /* Box Shadow */
-        } else if ( demo_array_keys_exists( $value, array( 'inset', 'offset-x', 'offset-y', 'blur-radius', 'spread-radius', 'color' ) ) && ! demo_array_keys_exists( $value, array( 'width', 'height', 'unit', 'style', 'top', 'right', 'bottom', 'left' ) ) ) {
+
+        // Box Shadow
+        } else if ( $option_type == 'box-shadow' ) {
 
           /* set $value with box-shadow properties or empty string */
           $value = ! empty( $value ) ? implode( ' ', $value ) : '';
-              
-        /* Dimension */
-        } else if ( demo_array_keys_exists( $value, array( 'width', 'height', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'style', 'color', 'top', 'right', 'bottom', 'left' ) ) ) {
+
+        // Dimension
+        } else if ( $option_type == 'dimension' ) {
           $dimension = array();
-          
+
           $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
-          
+
           if ( ! empty( $value['width'] ) )
             $dimension[] = $value['width'].$unit;
-            
+
           if ( ! empty( $value['height'] ) )
             $dimension[] = $value['height'].$unit;
-            
-          /* set $value with dimension properties or empty string */
+
+          // Set $value with dimension properties or empty string
           $value = ! empty( $dimension ) ? implode( ' ', $dimension ) : '';
-              
-        /* Spacing */
-        } else if ( demo_array_keys_exists( $value, array( 'top', 'right', 'bottom', 'left', 'unit' ) ) && ! demo_array_keys_exists( $value, array( 'width', 'height', 'style', 'color' ) ) ) {
+
+        // Spacing
+        } else if ( $option_type == 'spacing' ) {
           $spacing = array();
-          
+
           $unit = ! empty( $value['unit'] ) ? $value['unit'] : 'px';
-          
+
           if ( ! empty( $value['top'] ) )
             $spacing[] = $value['top'].$unit;
-            
+
           if ( ! empty( $value['right'] ) )
             $spacing[] = $value['right'].$unit;
-            
+
           if ( ! empty( $value['bottom'] ) )
             $spacing[] = $value['bottom'].$unit;
-            
+
           if ( ! empty( $value['left'] ) )
             $spacing[] = $value['left'].$unit;
-            
-          /* set $value with spacing properties or empty string */
+
+          // Set $value with spacing properties or empty string
           $value = ! empty( $spacing ) ? implode( ' ', $spacing ) : '';
-              
-        /* typography */
-        } else if ( demo_array_keys_exists( $value, array( 'font-color', 'font-family', 'font-size', 'font-style', 'font-variant', 'font-weight', 'letter-spacing', 'line-height', 'text-decoration', 'text-transform' ) ) ) {
+
+        // Typography
+        } else if ( $option_type == 'typography' ) {
           $font = array();
-          
+
           if ( ! empty( $value['font-color'] ) )
             $font[] = "color: " . $value['font-color'] . ";";
-          
+
           if ( ! empty( $value['font-family'] ) ) {
             foreach ( demo_recognized_font_families( $field_id ) as $key => $v ) {
               if ( $key == $value['font-family'] ) {
@@ -175,95 +181,213 @@ function demo_parse_css( $field_id = '', $insertion = '', $meta = false ) {
               }
             }
           }
-          
+
           if ( ! empty( $value['font-size'] ) )
             $font[] = "font-size: " . $value['font-size'] . ";";
-          
+
           if ( ! empty( $value['font-style'] ) )
             $font[] = "font-style: " . $value['font-style'] . ";";
-          
+
           if ( ! empty( $value['font-variant'] ) )
             $font[] = "font-variant: " . $value['font-variant'] . ";";
-          
+
           if ( ! empty( $value['font-weight'] ) )
             $font[] = "font-weight: " . $value['font-weight'] . ";";
-            
+
           if ( ! empty( $value['letter-spacing'] ) )
             $font[] = "letter-spacing: " . $value['letter-spacing'] . ";";
-          
+
           if ( ! empty( $value['line-height'] ) )
             $font[] = "line-height: " . $value['line-height'] . ";";
-          
+
           if ( ! empty( $value['text-decoration'] ) )
             $font[] = "text-decoration: " . $value['text-decoration'] . ";";
-          
+
           if ( ! empty( $value['text-transform'] ) )
             $font[] = "text-transform: " . $value['text-transform'] . ";";
-          
-          /* set $value with font properties or empty string */
+
+          // Set $value with font properties or empty string
           $value = ! empty( $font ) ? implode( "\n", $font ) : '';
-          
-        /* background */
-        } else if ( demo_array_keys_exists( $value, array( 'background-color', 'background-image', 'background-repeat', 'background-attachment', 'background-position', 'background-size' ) ) ) {
+
+        // Background
+        } else if ( $option_type == 'background' ) {
           $bg = array();
-          
+
           if ( ! empty( $value['background-color'] ) )
             $bg[] = $value['background-color'];
-            
-          if ( ! empty( $value['background-image'] ) )
+
+          if ( ! empty( $value['background-image'] ) ) {
+
+            // If an attachment ID is stored here fetch its URL and replace the value
+            if ( wp_attachment_is_image( $value['background-image'] ) ) {
+
+              $attachment_data = wp_get_attachment_image_src( $value['background-image'], 'original' );
+
+              // Check for attachment data
+              if ( $attachment_data ) {
+
+                $value['background-image'] = $attachment_data[0];
+
+              }
+
+            }
+
             $bg[] = 'url("' . $value['background-image'] . '")';
-            
+
+          }
+
           if ( ! empty( $value['background-repeat'] ) )
             $bg[] = $value['background-repeat'];
-            
+
           if ( ! empty( $value['background-attachment'] ) )
             $bg[] = $value['background-attachment'];
-            
+
           if ( ! empty( $value['background-position'] ) )
             $bg[] = $value['background-position'];
-          
+
           if ( ! empty( $value['background-size'] ) )
             $size = $value['background-size'];
-          
-          /* set $value with background properties or empty string */
+
+          // Set $value with background properties or empty string
           $value = ! empty( $bg ) ? 'background: ' . implode( " ", $bg ) . ';' : '';
-           
+
           if ( isset( $size ) ) {
             if ( ! empty( $bg ) ) {
               $value.= apply_filters( 'ot_demo_insert_css_with_markers_bg_size_white_space', "\n\x20\x20", $option_id );
             }
             $value.= "background-size: $size;";
           }
-            
+
         }
-      
+
       } else {
-      
-        $value = $value[$option_array[1]];
-        
+
+        $value = $value[$option_key];
+
       }
-     
+
     }
 
-    // Fallback when value is empty
-    if ( empty( $value ) && isset( $option_array[1] ) ) {
+    // If an attachment ID is stored here fetch its URL and replace the value
+    if ( $option_type == 'upload' && wp_attachment_is_image( $value ) ) {
 
-      // Link Color `inherit` fallback
-      if ( in_array( $option_array[1], array( 'link', 'hover', 'active', 'visited', 'focus' ) ) ) {
-        $value = 'inherit';
+      $attachment_data = wp_get_attachment_image_src( $value, 'original' );
+
+      // Check for attachment data
+      if ( $attachment_data ) {
+
+        $value = $attachment_data[0];
+
       }
+
+    }
+
+    // Attempt to fallback when `$value` is empty
+    if ( empty( $value ) ) {
+
+      // We're trying to access a single array key
+      if ( ! empty( $option_key ) ) {
+
+        // Link Color `inherit`
+        if ( $option_type == 'link-color' ) {
+          $fallback = 'inherit';
+        }
+
+      } else {
+
+        // Border
+        if ( $option_type == 'border' ) {
+          $fallback = 'inherit';
+        }
+
+        // Box Shadow
+        if ( $option_type == 'box-shadow' ) {
+          $fallback = 'none';
+        }
+
+        // Colorpicker
+        if ( $option_type == 'colorpicker' ) {
+          $fallback = 'inherit';
+        }
+
+        // Colorpicker Opacity
+        if ( $option_type == 'colorpicker-opacity' ) {
+          $fallback = 'inherit';
+        }
+
+      }
+
+      /**
+       * Filter the `dynamic.css` fallback value.
+       *
+       * @since 2.5.3
+       *
+       * @param string $fallback The default CSS fallback value.
+       * @param string $option_id The option ID.
+       * @param string $option_type The option type.
+       * @param string $option_key The option array key.
+       */
+      $fallback = apply_filters( 'ot_demo_insert_css_with_markers_fallback', $fallback, $option_id, $option_type, $option_key );
+
+    }
+
+    // Let's fallback!
+    if ( ! empty( $fallback ) ) {
+      $value = $fallback;
     }
 
     // Filter the CSS
     $value = apply_filters( 'ot_demo_insert_css_with_markers_value', $value, $option_id );
-         
-    /* insert CSS, even if the value is empty */
-     $insertion = stripslashes( str_replace( $option, $value, $insertion ) );
-     
+
+    // Insert CSS, even if the value is empty
+    $insertion = stripslashes( str_replace( $option, $value, $insertion ) );
+ 
   }
-  
+
   return $insertion;
-      
+
+}
+
+/**
+ * Returns the option type by ID.
+ *
+ * @param     string    $option_id The option ID
+ * @return    string    $settings_id The settings array ID
+ * @return    string    The option type.
+ *
+ * @access    public
+ * @since     2.5.3
+ */
+if ( ! function_exists( 'demo_get_option_type_by_id' ) ) {
+
+  function demo_get_option_type_by_id( $option_id, $settings_id = '' ) {
+
+    if ( empty( $settings_id ) ) {
+
+      $settings_id = ot_settings_id();
+
+    }
+
+    $settings = get_option( $settings_id, array() );
+
+    if ( isset( $settings['settings'] ) ) {
+
+      foreach( $settings['settings'] as $value ) {
+
+        if ( $option_id == $value['id'] && isset( $value['type'] ) ) {
+
+          return $value['type'];
+
+        }
+
+      }
+
+    }
+
+    return false;
+
+  }
+ 
 }
 
 /**
