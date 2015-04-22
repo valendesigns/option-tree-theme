@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 2.5.4
+* Version bump.
+
 #### 2.5.3
 * Added `inherit` fallback to the `border` option type in dynamic.css.
 * Added `none` fallback to the `box-shadow` option type in dynamic.css.
